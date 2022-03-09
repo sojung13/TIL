@@ -17,7 +17,7 @@
 
 2. [제어문](Python/제어문(조건문,반복문).md)
 3. [함수(Function)](Python/함수(function).md)
-4. [데이터 구조(Data Structure)](Python/데이터구조(Data Structure).md)
+4. [데이터 구조(Data Structure)](Python/데이터구조(DataStructure).md)
 5. [모듈(Module)](Python/모듈(Module).md)
 6. [에러/예외 처리](Python/에러,예외처리(Error,ExceptionHandling).md)
 7. [OOP](Python/OOP.md)
@@ -43,7 +43,7 @@
 ### DJANGO
 
 1. [Django 실행](Django/Django.md)
-2. [Django detail](Django/Django detail.md)
+2. [Django detail](Django/Djangodetail.md)
 2. [Model](Django/Model.md)
 
 
