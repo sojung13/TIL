@@ -73,10 +73,16 @@ M model T templates V views
 
 
 
+장고 cookbook : https://django-orm-cookbook-ko.readthedocs.io/en/latest/
+
+ORM의 웬만한 모든 질문에 대한 답이 정리되어 있어서 참조하기
+
+
+
 ```python
 # models.py
 class Article(models.Model):
-	title = models.Charfield(max_length=10)
+	title = models.CharField(max_length=10)
     # 길이제한이 10자인 타이틀.
     content = models.TextField()
 ```
@@ -116,17 +122,18 @@ CharField와 TextField가 무조건 정해진 상황에서 쓰는것만은 아�
 
 - "django가 model에 생긴 변화를 반영하는 방법"
 - Migration(이하 마이그레이션) 실행 및 DB 스키마를 다루기 위한 몇가지 명령어
-  - makemigrations 		 // table로 만들어가는 명령
+  - `makemigrations` 		 // table로 만들어가는 명령
     - model을 변경한 것에 기반한 새로운 마이그레이션(like 설계도)을 만들 때 사용
-  - migrate				         // table로 만들어가는 명령어
+    - 설계도를 제작한다!!
+  - `migrate`				         // table로 만들어가는 명령어
     - 마이그레이션을 DB에 반영하기 위해 사용
     - 설계도를 실제 DB에 반영하는 과정
     - 모델에서의 변경 사항들과 DB의 스키마가 동기화를 이룸
     - 테이블 이름 : <앱 이름_클래스명> 이렇게 출력된다.
-  - sqlmigrate                   // 확인용도
+  - `sqlmigrate`                   // 확인용도
     - 마이그레이션에 대한 SQL 구문을 보기 위해 사용
     - 마이그레이션이 SQL 문으로 어떻게 해석이 되어서 
-  - showmigrations         // 확인용도
+  - `showmigrations`         // 확인용도
     - 프로젝트 전체의 마이그레이션 상태를 확인하기 위해 사용
     - 마이그레이션 파일들이 migrate 됐는지 안됐는지 여부를 확인할 수 있음
 
@@ -137,10 +144,11 @@ CharField와 TextField가 무조건 정해진 상황에서 쓰는것만은 아�
 ```python
 $ python manage.py makemigrations
 # 'migrations/0001_initial.py' 생성 확인
-$ python manage.py migrations
+$ python manage.py migrate
 # 0001_initial.py 설계도를 실제 DB에 반영
 $ python manage.py sqlmigrate app_name 0001
 # 해당 migrations 설계도가 SQL 문으로 어떻게 해석되어서 동작할지 미리 확인
+# 앱 이름 설계도 번호
 $ python manage.py showmigrations
 # migrations 설계도들이 migrate 됐는지 안됐는지 여부를 확인할 수 있음
 ```
@@ -149,7 +157,12 @@ $ python manage.py showmigrations
 
 ![image-20220310002108585](Model.assets/image-20220310002108585.png)
 
-default 값을 설정하라는 문구가 뜰 때 1 혹은 2 중에 선택 가능
+makemigrations를 하면 이런 질문이 나온다! default 값을 설정하라는 문구가 뜰 때(방금 내가 입력한 행에 대한 열이 없을때)
+
+1) 디폴트값으로 할래(migration에 적을래)
+2) 다음에 내가 직접 입력하는 값으로 할래(models.py에 적을래)
+
+로 선택이 가능하다.
 
 
 
@@ -205,7 +218,7 @@ add 안하고 commit 하면 아무것도 안올라가듯이, 이 세 단계를 �
 
 ​	데이터베이스로부터 전달받은 객체 목록
 
-​	quertset 안의 객체는 0개, 1개 혹은 여러 개일 수 있음
+​	queryset 안의 객체는 0개, 1개 혹은 여러 개일 수 있음
 
 ​	데이터베이스로부터 조회, 필터, 정렬 등을 수행할 수 있음
 
@@ -225,7 +238,7 @@ $ pip install django-extensions
 
 ![image-20220308172130292](Model.assets/image-20220308172130292.png)
 
-앱 등록 후 shell_plus를 실행해준다.
+앱 등록 무조건 해줘야한다!! 이후 shell_plus를 실행해준다.
 
 
 
@@ -255,7 +268,7 @@ std라는 인스턴스의 한 줄에 바로 다 값을 입력하고 마찬가지
 
 
 
-🔶 objects의 create 사용
+🔶 objects의 create 메서드 사용
 
 ![image-20220308172644683](Model.assets/image-20220308172644683.png)
 
@@ -306,6 +319,7 @@ std라는 인스턴스의 한 줄에 바로 다 값을 입력하고 마찬가지
 
 - get()
 
+  - 1개의 data만 조회
   - 주어진 lookup 매개변수와 일치하는 객체를 반환
   - 객체를 찾을 수 없으면 DoesNotExist 예외를 발생시키고, 둘 이상의 객체를 찾으면 MultipleObjectsReturned 예외를 발생시킴
   - 위와 같은 특징을 가지고 있기 때문에 primary key와 같이 고유성(unique)을 보장하는 조회에서 사용해야 함
@@ -334,6 +348,18 @@ std라는 인스턴스의 한 줄에 바로 다 값을 입력하고 마찬가지
 
 
 
+all, get, filter는 데이터를 가져오는 것. all, filter는 수정하려면 for문을 돌리거나 update를 사용하면 된다.
+
+
+
+> Field lookups
+
+- 조회 시 특정 검색 조건을 지정
+- QuerySet 메서드 filter(), exclude(), 및 get()에 대한 키워드 인수로 지정됨
+- 사용 예시)
+  - Article.objects.filter(pk __gt=2)
+  - Article.objects.
+
 
 
 ----
@@ -355,7 +381,7 @@ std라는 인스턴스의 한 줄에 바로 다 값을 입력하고 마찬가지
 $ python manage.py createsuperuser
 ```
 
-- 관리자 계정 생성 후 서버를 실행한 다음 'admin/'으로 가서 관리자 페이지 로그인
+- 관리자 계정 생성 후 서버를 실행한 다음 '/admin'으로 가서 관리자 페이지 로그인
   - 계정만 만든 경우 Django 관리자 화면에서 아무 것도 보이지 않음
 - 내가 만든 Model을 보기 위해서는 admin.py에 작성하여 Django 서버에 등록
 - [주의] auth에 관련된 기본 테이블이 생성되지 않으면 관리자 계정을 생성
@@ -386,3 +412,4 @@ $ python manage.py createsuperuser
 https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options
 
 참조하기
+
