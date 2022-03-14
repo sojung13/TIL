@@ -31,6 +31,7 @@ from .models import Article
 # Create your views here.
 
 def index(request):
+    # Article의 모든 값들을 가져오는 것!!
     articles = Article.objects.all()
     context = {
         'articles' : articles,
@@ -39,10 +40,12 @@ def index(request):
 	# templates 폴더 안에 articles라는 폴더 내부에 html 파일들을 만듦!
 
 def create(request):
+    # 사용자가 입력한 게시글을 DB에 저장함
     return render(request, 'articles/create.html')
 
 def new(request):
     # 여기에 데이터를 저장을 시키자!!
+    # 게시글을 입력 받기 위한 html 파일을 보여주는 역할을 할 뿐
     # 저장된 정보는 request에 들어있다.
     # request.GET 
     # print(request.GET.get('title'))
@@ -117,6 +120,7 @@ ex) 게시판의 게시글을 작성하는 작업
 {% block content %}
 <h1>create</h1>
 <hr>
+# form 태그를 이용해 server로 해당 게시글을 보내주는 것이다
 <form action="{% url 'articles:new' %}" method="POST">
   {% csrf_token %}
 
@@ -124,6 +128,7 @@ ex) 게시판의 게시글을 작성하는 작업
   <input type="text" id="title" name="title">
   <hr> 
   <label for="content">내용</label>
+    # textarea : 그냥 글 치는 칸 크게 만드는 것
   <textarea name="content" id="content" cols="30" rows="10"></textarea>
   <hr>
   <button>글 작성하기</button>
@@ -133,6 +138,8 @@ ex) 게시판의 게시글을 작성하는 작업
 ```
 
 method를 POST로 작성하면 csrf_token 은 무조건 무조건 무조건 작성해주어야한다!!!!!!!!!
+
+만약 name을 작성안한다면???? 저장이 안된다
 
 
 
@@ -144,7 +151,24 @@ method를 POST로 작성하면 csrf_token 은 무조건 무조건 무조건 작�
 
 redirect = get 요청
 
+- 함수는 한 가지 일만을 해야한다. 게시글을 작성했다? 그럼 끝내야한다! 그것이 render
 
+- redirect는 저장한 글을 불러서 보여주는 일을 하는 것!
+
+
+
+```python
+def index(requtst):
+    pass
+# 모든 데이터 가져오기
+
+def new : 생성
+    
+    
+def edit(request, article_pk):
+    DB이 이미 존재하는 하나의 데이터를 대상으로 하는 행위
+    
+```
 
 
 
