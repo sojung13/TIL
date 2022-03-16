@@ -1,6 +1,6 @@
 <h1>🌱TIL (Today I Learned)</h1>
 
-### GIT 사용법
+### ❤ GIT 사용법
 
 1. [Markdown](startcamp/마크다운md)
 2. [CLI](startcamp/CLI.md)
@@ -11,7 +11,7 @@
 
 -----
 
-### PYTHON
+### 🧡 PYTHON
 
 1. [변수(Variable)](Python/변수(Variable).md)
 
@@ -24,7 +24,7 @@
 
 -----
 
-### WEB
+### 💛 WEB
 
 1. [HTML](Web/HTML.md)
 2. [HTML 실습](Web/HTML+.md)
@@ -32,7 +32,7 @@
 
 ----
 
-### ALGORITHM
+### 💚 ALGORITHM
 
 1. [Bubble/Counting Sort](Algorithm/Bubble,Counting_sort.md)
 2. [List배열](Algorithm/List.md)
@@ -44,7 +44,7 @@
 
 ---
 
-### DJANGO
+### 💙 DJANGO
 
 1. [Django 실행](Django/Django.md)
 2. [Django detail](Django/Djangodetail.md)
@@ -53,11 +53,13 @@
 
 ----
 
-### DB
+### 💜 DB
 
 1. [SQL basic](DB/SQL.md)
 2. [SQL detail 1](DB/SQL_5,md) / [SQL detail 2](DB/SQL_6,md)
 
+----
 
+### 🤍 이것이 코딩 테스트다
 
 
