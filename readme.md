@@ -36,7 +36,11 @@
 
 1. [Bubble/Counting Sort](Algorithm/Bubble,Counting_sort.md)
 2. [List배열](Algorithm/List.md)
-3. 
+3. String
+3. Stack1
+3. Stack2
+3. Queue
+3. [Tree](Algorithm/Tree.md)
 
 ---
 
@@ -45,12 +49,15 @@
 1. [Django 실행](Django/Django.md)
 2. [Django detail](Django/Djangodetail.md)
 2. [Model](Django/Model.md)
+2. [Model detail](Django/Modeldetail.md)
+
+----
+
+### DB
+
+1. [SQL basic](DB/SQL.md)
+2. [SQL detail 1](DB/SQL_5,md) / [SQL detail 2](DB/SQL_6,md)
 
 
 
-![image-20220113160122362](readme.assets/image-20220113160217951.png)
-
-![image-20220113160135217](readme.assets/image-20220113160135217.png)
-
-![image-20220113160145935](readme.assets/image-20220113160145935.png)
 
