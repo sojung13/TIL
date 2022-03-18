@@ -58,8 +58,3 @@
 1. [SQL basic](DB/SQL.md)
 2. [SQL detail 1](DB/SQL_5,md) / [SQL detail 2](DB/SQL_6,md)
 
-----
-
-### 🤍 이것이 코딩 테스트다
-
-
