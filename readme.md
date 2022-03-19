@@ -39,7 +39,7 @@
 3. String
 3. Stack1
 3. Stack2
-3. Queue
+3. [Queue](Algorithm/Queue.md) / [BFS 너비우선탐색](Algorithm/BFS.md)
 3. [Tree](Algorithm/Tree.md)
 
 ---
