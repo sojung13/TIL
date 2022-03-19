@@ -29,7 +29,7 @@
 # ValueError!
 ```
 
-![image-20220124155703644](데이터 구조(Data Structure).assets/image-20220124155703644.png)
+![image-20220124155703644](데이터구조(DataStructure).assets/image-20220124155703644.png)
 
 > .replace(old, new[,count])
 
@@ -77,7 +77,7 @@ count를 지정하면, 해당 개수만큼만 시행
 # s!s!a!f!y!
 ```
 
-![image-20220124160213835](데이터 구조(Data Structure).assets/image-20220124160213835.png)
+![image-20220124160213835](데이터구조(DataStructure).assets/image-20220124160213835.png)
 
 
 
@@ -86,7 +86,7 @@ count를 지정하면, 해당 개수만큼만 시행
 - 순서를 가지는 0개 이상의 객체를 참조하는 자료형
 - 항상 대괄호 형태로 출력
 
-![image-20220124160247853](데이터 구조(Data Structure).assets/image-20220124160247853.png)
+![image-20220124160247853](데이터구조(DataStructure).assets/image-20220124160247853.png)
 
 
 
@@ -269,7 +269,7 @@ print(numbers, result)
 - 담고있는 객체를 삽입 변경, 삭제 가능 > 가변자료형(mutable)
 - 수학에서의 집합과 동일한 구조를 가짐
 
-![image-20220124212442786](데이터 구조(Data Structure).assets/image-20220124212442786.png)
+![image-20220124212442786](데이터구조(DataStructure).assets/image-20220124212442786.png)
 
 
 
@@ -366,7 +366,7 @@ print(a)
 - 딕셔너리의 키(key) : 해시가능한 불변 자료형만 가능
 - 각 키의 값(values) : 어떠한 형태든 관계 없음
 
-![image-20220124213214021](데이터 구조(Data Structure).assets/image-20220124213214021.png)
+![image-20220124213214021](데이터구조(DataStructure).assets/image-20220124213214021.png)
 
 
 
