@@ -26,8 +26,7 @@
 
 ### 💛 WEB
 
-1. [HTML](Web/HTML.md)
-2. [HTML 실습](Web/HTML+.md)
+1. [HTML](Web/HTML.md) / [HTML 실습](Web/HTML+.md)
 3. [Grid](Web/grid.md)
 
 ----
@@ -46,10 +45,10 @@
 
 ### 💙 DJANGO
 
-1. [Django 실행](Django/Django.md)
-2. [Django detail](Django/Djangodetail.md)
-2. [Model](Django/Model.md)
-2. [Model detail](Django/Modeldetail.md)
+1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
+2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
+3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명
+2. [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
 
 ----
 
