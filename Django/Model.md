@@ -409,7 +409,56 @@ $ python manage.py createsuperuser
 
 위와 같이 options에 입력한 것들이 시각적으로 바로바로 보임!!!
 
-https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options
+https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options 참조하기
 
-참조하기
 
+
+> HTTP method
+
+- GET
+  - 특정 리솟를 가져오도록 요청할 때 사용
+  - 반드시 데이터를 가져올 때만 사용해야 함
+  - DB에 변화를 주지 않음
+  - CRUD에서 R 역할을 담당
+- POST
+  - 서버로 데이터를 전송할 때 사용
+  - 리소스를 생성/ 변경하기 위해 데이터를 HTTP body에 담아 전송
+  - 서버에 변경사항을 만듦
+  - CRUD에서 C/ U/ D 역할을 담당
+
+
+
+> csrf_token template tag
+
+```django
+{% csrf_token %}
+```
+
+- CSRF 보호에 사용
+- input type이 hidden으로 작성되며 value는 Django에서 생성한 hash 값을 설정됨
+- 해당 태그 없이 요청을 보낸다면 Django 서버는 403 forbidden을 응답
+
+
+
+> Django shortcut function - "redirect()"
+
+- 새 URL로 요청을 다시 보냄
+- 인자에 따라 HttpResponseRedirect를 반환
+- 브라우저는 현재 경로에 따라 전체 URL 자체를 재구성(reconstruct)
+
+
+
+### ✨ 기억해둘 것!! 
+
+- Model 
+  - 웹 애플리케이션의 데이터를 구조화하고 조작하기 위한 도구
+- Database
+  - 체계화된 데이터의 모임(집합)
+- Migrations
+  - Django가 model에 생긴 변화(필드를 추가, 모델 삭제 등)를 반영하는 방법
+- ORM
+  - OOP 언어를 사용하여 데이터베이스와 OOP 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법
+- Database API
+  - DB를 조작하기 위한 도구(QuerySet API, CRUD)
+- Admin Site
+  - 사용자가 아닌 서버의 관리자가 활용하기 위한 페이지
