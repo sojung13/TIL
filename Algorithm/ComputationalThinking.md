@@ -30,20 +30,20 @@
 - p,q가 명제일 때, p,q 모두 참일 때만 참이 되는 명제
 - p^q(p and q, p 그리고 q)
 
-![image-20220321185530188](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321185530188.png)
+![image-20220321185530188](ComputationalThinking.assets/image-20220321185530188.png)
 
 ###### ✅ 논리합 OR
 
 - p,q가 명제일 때, p,q 모두 거짓일 때만 거짓이 되는 명제
 - p V q(p or q, p 또는 q)
 
-![image-20220321185642337](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321185642337.png)
+![image-20220321185642337](ComputationalThinking.assets/image-20220321185642337.png)
 
 ##### ✅ 배타적 논리합 XOR
 
 - p,q가 명제일 때, p,q 중 하나만 참일 떄 참이 되는 명제
 
-  ![image-20220321185714317](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321185714317.png)
+  ![image-20220321185714317](ComputationalThinking.assets/image-20220321185714317.png)
 
 
 
@@ -52,7 +52,7 @@
 - p,q가 명제일 때, 명제 p가 조건(또는 원인), q가 결론(또는 결과)로 제시되는 명제.
 - p -> q (p이며 q이다.)
 
-![image-20220321125202520](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321125202520.png)
+![image-20220321125202520](ComputationalThinking.assets/image-20220321125202520.png)
 
 
 
@@ -61,7 +61,7 @@
 - p,q가 명제일 때, 명제 p와 q가 모두 조건이면서 결론인 명제
 - p <-> q(p면 q고, q면 p다.)
 
-![image-20220321125328614](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321125328614.png)
+![image-20220321125328614](ComputationalThinking.assets/image-20220321125328614.png)
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-![image-20220321110227107](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321110227107.png)
+![image-20220321110227107](ComputationalThinking.assets/image-20220321110227107.png)
 
 
 
@@ -89,13 +89,13 @@
 
 
 
-![image-20220321111910141](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321111910141.png)
+![image-20220321111910141](ComputationalThinking.assets/image-20220321111910141.png)
 
-![image-20220321112153087](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321112153087.png)
+![image-20220321112153087](ComputationalThinking.assets/image-20220321112153087.png)
 
-![image-20220321112325361](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321112325361.png)
+![image-20220321112325361](ComputationalThinking.assets/image-20220321112325361.png)
 
-![image-20220321185033005](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321185033005.png)
+![image-20220321185033005](ComputationalThinking.assets/image-20220321185033005.png)
 
 
 
@@ -148,7 +148,7 @@ n = 2k + 1
 - 사실, 꼭 저 범위인것은 아님. 약속하는 방식에 따라 다르지만, 어떤 경우 최대 2^k 가지의 값을 표현하는 것이 가능
 - 10진수로 k자리를 쓰면 0부터 10^k-1까지 표현이 가능한 것과 완전히 동일한 과정
 
-![image-20220321191329209](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321191329209.png)
+![image-20220321191329209](ComputationalThinking.assets/image-20220321191329209.png)
 
 - 어떤 값 n을 표현하기 위해서는 몇 개의 비트가 필요할까?
 - 2의 k승 -1 >= n이 성립해야 함. 즉 2의 k승 >= n + 1
@@ -167,7 +167,7 @@ n = 2k + 1
 - 100자리로 표현할 수 있는 10진수 값은 읽을 수도 없을 정도로 큰 값이다
 - 컴퓨터 분야에서 로그의 밑은 항상 2
 
-![image-20220321172939406](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321172939406.png)
+![image-20220321172939406](ComputationalThinking.assets/image-20220321172939406.png)
 
 
 
@@ -183,9 +183,9 @@ k = logn
 
 #### 💣 문제 3) n이 충분히 큰 값일때 다음 중 어느 값이 더 큰가?
 
-![image-20220321173327389](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321173327389.png)
+![image-20220321173327389](ComputationalThinking.assets/image-20220321173327389.png)
 
-![image-20220321173704265](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321173704265.png)
+![image-20220321173704265](ComputationalThinking.assets/image-20220321173704265.png)
 
 3의 경우)
 
@@ -203,7 +203,7 @@ x = 2의 f(x)+5 + 3
 
 f-1(x) = 2의 x+5 + 3
 
-![image-20220321171545964](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321171545964.png)
+![image-20220321171545964](ComputationalThinking.assets/image-20220321171545964.png)
 
 
 
@@ -211,7 +211,7 @@ f(x) = x + 1
 
 f(x) -1 = x
 
-![image-20220321193200448](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321193200448.png)
+![image-20220321193200448](ComputationalThinking.assets/image-20220321193200448.png)
 
 ### 💛 3 집합과 조합론
 
@@ -247,9 +247,9 @@ B = {x|x=4k+1 혹은 x=4k+3, k는 자연수}
 - 조합론은 경우의 수를 따지는 문제들을 보통 말한다
 - 조합은 개수는 C를 이용하여 표현하기도 하지만 (5 2) = 10 과 같은 괄호 표현을 더 많이 쓴다.
 
-![image-20220321143641686](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321143641686.png)
+![image-20220321143641686](ComputationalThinking.assets/image-20220321143641686.png)
 
-![image-20220321164350111](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321164350111.png)
+![image-20220321164350111](ComputationalThinking.assets/image-20220321164350111.png)
 
 
 
@@ -257,15 +257,15 @@ B = {x|x=4k+1 혹은 x=4k+3, k는 자연수}
 
 귀류법 : 현명제가 참인 것을 증명 > 명제의 부정을 참이라 가정. 모순을 증명해서 원래의 명제가 참임을 보임
 
-![image-20220321144404889](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321144404889.png)
+![image-20220321144404889](ComputationalThinking.assets/image-20220321144404889.png)
 
 #### 💣 문제 8 ) 8x8 체스 판에 말 두개를 놓으려고 한다. 아무 곳에나 놓아도 되지만 한 칸에 두 개가 들어가지는 못한다. 가능한 방법은 모두 몇가지인가?
 
-![image-20220321144527406](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321144527406.png)
+![image-20220321144527406](ComputationalThinking.assets/image-20220321144527406.png)
 
 #### 💣 문제 12 ) 52개의 카드를 이용해서 만들 수 있는 5개 카드의 조합은 몇가지?
 
-![image-20220321144708515](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321144708515.png)
+![image-20220321144708515](ComputationalThinking.assets/image-20220321144708515.png)
 
 
 
@@ -282,15 +282,15 @@ B = {x|x=4k+1 혹은 x=4k+3, k는 자연수}
 
 문제1 : T(n) = T(n-1) + 1, T(0) = 1
 
-![image-20220321145126393](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321145126393.png)
+![image-20220321145126393](ComputationalThinking.assets/image-20220321145126393.png)
 
-![image-20220321150453386](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321150453386.png)
+![image-20220321150453386](ComputationalThinking.assets/image-20220321150453386.png)
 
-![image-20220321151034284](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321151034284.png)
+![image-20220321151034284](ComputationalThinking.assets/image-20220321151034284.png)
 
-![image-20220321152345888](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321152345888.png)
+![image-20220321152345888](ComputationalThinking.assets/image-20220321152345888.png)
 
-![image-20220321154052698](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20220321154052698.png)
+![image-20220321154052698](ComputationalThinking.assets/image-20220321154052698.png)
 
 (문제 7과 같은 문제는 복잡하기 때문에 스킵해도 된다)
 
