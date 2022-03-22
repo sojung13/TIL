@@ -303,3 +303,10 @@ B = {x|x=4k+1 혹은 x=4k+3, k는 자연수}
 - 재귀란 자기 자신을 호출하는 함수, 그럼 끝날 수가 있는가?
 - 함수는 입력이 있으며, 자기 자신의 입력과 동일한 입력으로 자기 자신을 호출하면 당연히 끝나지 않음
 
+
+
+
+
+![image-20220322150856157](ComputationalThinking.assets/image-20220322150856157.png)
+
+![image-20220322150955140](ComputationalThinking.assets/image-20220322150955140.png)
