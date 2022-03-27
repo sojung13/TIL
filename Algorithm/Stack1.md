@@ -80,3 +80,48 @@ if top > -1:
     print(stack[top])
 ```
 
+
+
+### 스택 응용) 괄호검사
+
+```python
+def check(str):
+    stack = []      # 스택 생성
+    for s in str:   # 문자에 접근
+        if s == '(' or s == '{':   # s가 여는 괄호일 경우
+            stack.append(s)        # 스택에 추가
+        elif s == ')' or s == '}':    # 닫는 괄호일 경우
+            if stack:      # 스택이 비어있지 않으면
+                t = stack.pop()    # 스택의 마지막 요소 제거, 반환
+            else:          # 스택이 비어있으면 0 반환(짝이 맞지 않음)
+                return 0
+            if t == '(' and s == '}':    # 괄호의 종류가 다를 경우
+                return 0                 # 0 반환
+            if t == '{' and s == ')':
+                return 0
+    if stack:    # 스택이 비어있지 않으면
+        return 0
+    else:        # 스택이 비어있으면(짝이 맞음)
+        return 1
+
+T = int(input())
+for tc in range(1, T+1):
+    string = input()
+
+    result = check(string)
+    print(f'#{tc} {result}')
+```
+
+![image-20220327162654552](Stack1.assets/image-20220327162654552.png)
+
+
+
+ 
+
+### 재귀호출
+
+- 자기 자신을 호출하여 순환 수행되는 것
+- 함수에서 실행해야 하는 작업의 특성에 따라 일반적인 호출방식보다 재귀호출방식을 사용하여 함수를 만들면 프로그램의 크기를 줄이고 간단하게 작성
+  - 재귀 호출의 예) factorial
+
+![image-20220327165511187](Stack1.assets/image-20220327165511187.png)
