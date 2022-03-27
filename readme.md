@@ -36,7 +36,7 @@
 1. [Bubble/Counting Sort](Algorithm/Bubble,Counting_sort.md)
 2. [List배열](Algorithm/List.md)
 3. String
-3. Stack1
+3. [Stack1](Algorithm/Stack1.md) / [DFS 깊이우선탐색](Algorithm/DFS.md) : Stack과 DFS 탐색 과정
 3. Stack2
 3. [Queue](Algorithm/Queue.md) / [BFS 너비우선탐색](Algorithm/BFS.md) : Queue와 Queue를 활용한 BFS 탐색 과정
 3. [Tree](Algorithm/Tree.md)
