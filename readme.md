@@ -57,5 +57,5 @@
 ### 💜 DB
 
 1. [SQL basic](DB/SQL.md)
-2. [SQL detail 1](DB/SQL_5.md) / [SQL detail 2](DB/SQL_6.md)
+2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md)
 
