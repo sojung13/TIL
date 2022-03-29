@@ -41,7 +41,7 @@
 3. [Queue](Algorithm/Queue.md) / [BFS 너비우선탐색](Algorithm/BFS.md) : Queue와 Queue를 활용한 BFS 탐색 과정
 3. [Tree](Algorithm/Tree.md)
 3. [ComputationalThinking](Algorithm/ComputationalThinking.md) : 그 유명한 컴띵의 전반적인 과정
-3. [Start](Algorithm/start.md) : 수학적 표현과 재귀에 대해
+3. [Start](Algorithm/Start.md) : 수학적 표현과 재귀에 대해
 3. [완전탐색/그리디](Algorithm/완전탐색.md)
 
 ---
