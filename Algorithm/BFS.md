@@ -95,3 +95,38 @@ for tc in range(1, t+1):
     print(f'#{tc} {ans}')
 ```
 
+
+
+https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX-Wr5a6Lq0DFARi&contestProbId=AX-mzT76I8YDFARi&probBoxId=AX_SyT1KbDsDFAVy+&type=USER&problemBoxTitle=220404%3A+%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4_4%EC%B0%A8&problemBoxCnt=5
+
+![image-20220404173020647](BFS.assets/image-20220404173020647.png)
+
+```python
+def BFS(si, sj, ei, ej):
+    q = []  # [1] q, v 생성
+    visited = [[100000] * N for _ in range(N)]
+
+    q.append((si, sj))  # [2] q 초기데이터(들) 삽입, v 표시
+    visited[si][sj] = arr[si][sj]   # 방문 표시
+
+    while q:
+        ci, cj = q.pop(0)  # 하나씩 꺼내서
+
+        # 네방향/8방향/숫자차이가 일정값이하...
+        for di, dj in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            ni, nj = ci + di, cj + dj
+            if 0 <= ni < N and 0 <= nj < N and visited[ni][nj] > visited[ci][cj] + arr[ni][nj]:
+                q.append((ni, nj))
+                visited[ni][nj] = visited[ci][cj] + arr[ni][nj]
+
+    return visited[ei][ej]
+
+T = int(input())
+for test_case in range(1, T + 1):
+    N = int(input())
+    arr = [list(map(int, input())) for _ in range(N)]
+    ans = BFS(0, 0, N - 1, N - 1)   # 0,0 인덱스에서 마지막 인덱스까지 가는 길
+    print(f'#{test_case} {ans}')
+```
+
+배열 중 가장 적은 숫자의 합들로만 가는 방법
