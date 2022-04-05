@@ -15,8 +15,8 @@
 
 1. ✔️[변수(Variable)](Python/변수(Variable).md)
 
-2. [제어문](Python/제어문(조건문,반복문).md)
-3. ✔️[함수(Function)](Python/함수(function).md)
+2. ✔️[제어문](Python/제어문(조건문,반복문).md)
+3. [함수(Function)](Python/함수(function).md)
 4. [데이터구조(Data Structure)](Python/데이터구조(DataStructure).md)
 5. [모듈(Module)](Python/모듈(Module).md)
 6. [에러/예외처리](Python/에러,예외처리(Error,ExceptionHandling).md)
@@ -36,16 +36,16 @@
 1. [Bubble/Counting Sort](Algorithm/Bubble,Counting_sort.md)
 2. [List배열](Algorithm/List.md)
 3. String
-3. [Stack1](Algorithm/Stack1.md) / [DFS 깊이우선탐색](Algorithm/DFS.md) : Stack과 DFS 탐색 과정
-3. Stack2
-3. [Queue](Algorithm/Queue.md) / [BFS 너비우선탐색](Algorithm/BFS.md) : Queue와 Queue를 활용한 BFS 탐색 과정
-3. [Tree](Algorithm/Tree.md)
-3. [ComputationalThinking](Algorithm/ComputationalThinking.md) : 그 유명한 컴띵의 전반적인 과정
-3. ✔️[Start](Algorithm/Start.md) : 수학적 표현과 재귀에 대해
-3. [완전탐색/그리디](Algorithm/완전탐색.md)
-3. ✔️[분할정복/백트래킹](Algorithm/분할정복,백트래킹.md) : 분할정복/ 백트래킹에 대한 설명과 퀵 정렬/ 병합정렬/ 트리에 대한 간단한 설명도 포함
-3. [MergeSort](Algorithm/병합정렬.md) : 퀵 정렬과 함께 많이 사용하는 병합정렬에 대해
-3. ✔️ [그래프](Algorithm/그래프.md) : (수정 들어가야함)
+4. [Stack1](Algorithm/Stack1.md) / [DFS 깊이우선탐색](Algorithm/DFS.md) : Stack과 DFS 탐색 과정
+5. Stack2
+6. [Queue](Algorithm/Queue.md) / [BFS 너비우선탐색](Algorithm/BFS.md) : Queue와 Queue를 활용한 BFS 탐색 과정
+7. [Tree](Algorithm/Tree.md)
+8. [ComputationalThinking](Algorithm/ComputationalThinking.md) : 그 유명한 컴띵의 전반적인 과정
+9. ✔️[Start](Algorithm/Start.md) : 수학적 표현과 재귀에 대해
+10. [완전탐색/그리디](Algorithm/완전탐색.md)
+11. ✔️[분할정복/백트래킹](Algorithm/분할정복,백트래킹.md) : 분할정복/ 백트래킹에 대한 설명과 퀵 정렬/ 병합정렬/ 트리에 대한 간단한 설명도 포함
+12. [MergeSort](Algorithm/병합정렬.md) : 퀵 정렬과 함께 많이 사용하는 병합정렬에 대해
+3. [그래프](Algorithm/그래프.md) : 프림/ 다익스트라, 크루스칼 등 그래프 차원을 이용한 알고리즘에 대해
 
 ---
 
