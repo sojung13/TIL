@@ -2,12 +2,9 @@
 
 ### ❤ GIT 사용법
 
-1. [Markdown](startcamp/마크다운md)
+1. ✔️[Markdown](startcamp/마크다운md)
 2. [CLI](startcamp/CLI.md)
-
-3. [GIT 예시](startcamp/git예시.md)
-
-4. [GIT 사용법](startcamp/Git.md)
+3. [GIT 사용법](startcamp/Git.md) : git 하는 방법! 그림으로 보려면 👉[GIT 예시 도식화 그림](startcamp/git예시.md)
 
 -----
 
@@ -53,8 +50,7 @@
 
 1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
 2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
-3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명
-2. [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
+3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
 
 ----
 
