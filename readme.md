@@ -51,6 +51,7 @@
 1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
 2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
 3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
+3. [Form](Django/Django Form.md) : 장고 form이란
 
 ----
 
