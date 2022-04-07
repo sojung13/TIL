@@ -194,6 +194,10 @@ choiceField 등 구조를 확인할 수 있는 사이트 참조하기!!
 
 ![image-20220406173306092](DjangoForms.assets/image-20220406173306092.png)
 
+- context 문은 무조건 들여쓰기로 나와있어야한다! 유효성 검사에 통과 못해도 처리가 가능한 return이 있어야 하기 때문이다.
+
+
+
 
 
 2. new.html -> create.html 이름변경 / 이제는 action 값이 없어도 동작
@@ -246,8 +250,28 @@ edit 페이지를 없애고 update에 합칠 경우, instance=article을 작성�
 
 
 
+> update 만들기
+
+create 창 만들기와 다른 점 2가지
+
+1. pk 받아오기
+
+```python
+def update(request,pk):
+    pass
+```
+
+2. instance 받아주기
+
+
+
+
+
+
+
+
+
 class = "form-control" > 위젯 꾸미는 클래스명 - 위젯에 직접 부트스트랩 클래스 적용한다!
 
 ![image-20220406155236492](DjangoForms.assets/image-20220406155236492.png)
-
 
