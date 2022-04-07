@@ -52,6 +52,7 @@
 2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
 3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
 3. [Form](Django/DjangoForms.md) : 장고 form이란
+3. [장고 실습](Django/Prof.CRUD.md) : 장고로 같이 홈페이지 화면부터 게시글 수정/ 삭제까지 간단하게 만들어봅시다
 
 ----
 
