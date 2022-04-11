@@ -54,7 +54,7 @@
 3. [Form](Django/DjangoForms.md) : 장고 form이란
 3. [장고 실습](Django/Prof.CRUD.md) : 장고로 같이 홈페이지 화면부터 게시글 수정/ 삭제까지 간단하게 만들어봅시다
 3. [쿠키와 로그인](Django/AuthenticationSystem1.md) : 쿠키와 캐쉬, 로그인과 로그아웃 과정
-3. [회원가입](Algorithm/AuthenticationSystem2.md) : 웹사이트 회원가입/ 탈퇴/ 정보수정/ 비밀번호 변경 과정
+3. [회원가입](Django/AuthenticationSystem2.md) : 웹사이트 회원가입/ 탈퇴/ 정보수정/ 비밀번호 변경 과정
 
 ----
 
