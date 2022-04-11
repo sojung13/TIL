@@ -14,7 +14,7 @@
 
 
 
-![image-20220411142130798](회원가입.assets/image-20220411142130798.png)
+![image-20220411142130798](AuthenticationSystem2.assets/image-20220411142130798.png)
 
 👉 urls.py에 path 경로를 만들어준다.
 
@@ -28,6 +28,8 @@ def signup(request):
         if form.is_valid():
             user = form.save()
             # 회원가입 후 자동으로 로그인 진행하기
+            # 전반적으로 create 함수와 비슷하지만 이 부분이 유일하게 다르다
+            # login 때 사용했던 정보 갖다 쓴다.
             auth_login(request, user)
             return redirect('accounts:index')
     else:
@@ -38,9 +40,15 @@ def signup(request):
     return render(request,'accounts/signup.html', context)
 ```
 
-![image-20220411142545566](회원가입.assets/image-20220411142545566.png)
+![image-20220411142545566](AuthenticationSystem2.assets/image-20220411142545566.png)
 
 👉 대략적인 구조는 create 함수와 정말 비슷하다! 사용하는 form이 다르다는거 외에는 차이점이 거의 없다. 그리고 위와 같이 코드 작성 시 회원가입 창이 사진과 같이 뜬다.
+
+👉 HTML 문서에서 회원가입 버튼 코드를 작성해주기만 하면 된다.
+
+```html
+<a href="{% url 'accounts:signup' %}">회원가입</a>
+```
 
 
 
@@ -52,7 +60,7 @@ def signup(request):
 
 - 회원탈퇴는 DB에서 사용자를 삭제하는 것과 같음
 
-![image-20220411144043308](회원가입.assets/image-20220411144043308.png)
+![image-20220411144043308](AuthenticationSystem2.assets/image-20220411144043308.png)
 
 👉accounts 내부 urls.py에 경로를 작성한다.
 
@@ -64,8 +72,11 @@ def delete(request):
     if request.user.is_authenticated:
         # 주의사항! 로그아웃 먼저 하면 회원탈퇴가 안된다.
         # 먼저 유저를 지운 다음(회원탈퇴 후) 로그아웃 시켜줘야 한다.
-	    request.user.delete()
-        auth_logout(request)
+        # 로그인한 사용자의 정보가 request.user에 저장되어 있다.
+        # 만약 로그인안했다면 AnonynousUser 상태로 되어있는 것이다.
+        # 근데 사실 위의 if 문을 작성했기 때문에 로그인 안 한 사람 걸러주긴 한다.
+	    request.user.delete()  
+        auth_logout(request)  # 세션도 지워주는 과정
     return redirect('accounts:index')
 ```
 
@@ -81,7 +92,7 @@ def delete(request):
 
 - 사용자의 정보 및 권한을 변경하기 위해 admin 인터페이스에서 사용되는 ModelForm
 
-![image-20220411150247829](회원가입.assets/image-20220411150247829.png)
+![image-20220411150247829](AuthenticationSystem2.assets/image-20220411150247829.png)
 
 👉accounts 내부 urls.py에 경로를 작성한다.
 
@@ -118,18 +129,20 @@ class CustomUserChageForm(UserChangeForm):
     # 회원정보 수정 페이지에서 불편하게 디자인된 비밀번호 변경란 없애고 싶다면 작성하기
     # 하지만 패스워드 변경창을 새로 띄워야한다는 단점이 있다. 선택사항임.
     password = None
+    # 밑에 있는 코드는 필수사항이다.
     class Meta:
         model = get_user_model()
         # 보여줄 부분만 작성해주기
+        # (사용자가 수정 가능한 정보들만)
         fields = ('email','first_name','last_name',)
 ```
 
-![image-20220411151812099](회원가입.assets/image-20220411151812099.png)
+![image-20220411151812099](AuthenticationSystem2.assets/image-20220411151812099.png)
 
 > get_user_model()
 
 - 현재 프로젝트에서 활성화된 사용자 모델(active user model)을 반환
-- Django는 User 클래스를 직접 참조하는 대신 django.contrib.auth.get_user_model()을 사용하여 참조해야 한다고 강조
+- Django는 User 클래스를 직접 참조하는 대신 `django.contrib.auth.get_user_model()`을 사용하여 참조해야 한다고 강조
 
 
 
@@ -147,7 +160,7 @@ class CustomUserChageForm(UserChangeForm):
 
 - 이전 비밀번호를 이벽하지 않고 비밀번호를 설정할 수 있는 SetPasswordForm을 상속받는 서브 클래스
 
-![image-20220411153049136](회원가입.assets/image-20220411153049136.png)
+![image-20220411153049136](AuthenticationSystem2.assets/image-20220411153049136.png)
 
 👉 accounts 내부 urls.py에 경로를 작성한다.
 
@@ -188,6 +201,8 @@ def change_password(request):
 @require_http_methods(['GET', 'POST'])
 def change_password(request):
     if request.method == 'POST':
+        # ModelForm을 받는 것이 아니고 일반 Form을 상속받기 때문에 앞에 유저정보를 따로 줘야한다.
+        # SetPasswordForm을 상속받기 때문에!
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
             user = form.save()

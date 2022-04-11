@@ -132,6 +132,24 @@ $ python manage.py startapp accounts
 - HttpRequest 객체와 User 객체가 필요
 - Django의 session framework를 사용하여 세션에 user의 ID를 저장(== 로그인)
 
+
+
+✔️ get_user()
+
+- AuthenticationForm의 인스턴스 메서드
+- user_cache는 인스턴스 생성 시에 None으로 할당되며, 유효성 검사를 통과했을 경우 로그인한 사용자 객체로 할당됨
+- 인스턴스의 유효성을 먼저 확인하고, 인스턴스가 유효할 때만 user를 제공하려는 구조
+
+![image-20220411212232649](인증.assets/image-20220411212232649.png)
+
+
+
+----
+
+
+
+> 로그인 코드
+
 ![image-20220411101503611](인증.assets/image-20220411101503611.png)
 
 ![image-20220411101416465](인증.assets/image-20220411101416465.png)
@@ -149,7 +167,12 @@ $ python manage.py startapp accounts
 create 함수는 Model로 작성한 ModelForm을 상속받는 반면, login 함수는 Form의 상속을 받는 Form이다. 첫 번째가 request고 두 번째 인자가 데이터인 것이다. Form이냐 ModelForm이냐 그거를 구분하면 된다.
 
 ```python
+@require_http_methods(['GET','POST'])
 def login(request):
+    # 로그인한 상태에선 다시 로그인을 할 수 없다.
+    if request.user.is_authenticated:
+    	return redirect('articles:index')
+    
     if request.method == 'POST':
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
@@ -169,17 +192,7 @@ def login(request):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+----
 
 
 
@@ -192,3 +205,69 @@ def login(request):
   - 사용자가 로그인하지 않은 경우 오류를 발생시키지 않음
   - 현재 요청에 대한 session data를 DB에서 완전히 삭제하고, 클라이언트의 쿠키에서도 sessionid가 삭제됨
   - 이는 다른 사람이 동일한 웹 브라우저를 사용하여 로그인하고, `이전 사용자의 세션 데이터에 엑세스하는 것을 방지하기 위함`
+
+![image-20220411211856111](인증.assets/image-20220411211856111.png)
+
+![image-20220411211919481](인증.assets/image-20220411211919481.png)
+
+- base.html에 작성해주면 된다.
+
+```python
+@require_http_methods(['GET', 'POST'])
+def signup(request):
+    # 로그인된 상태에서만 로그아웃을 할 수 있다.
+    if request.user.is_authenticated:
+        return redirect('articles:index')
+```
+
+
+
+
+
+> 로그인 사용자에 대한 엑세스 제한 2가지 방법
+
+- `is_authenticated`
+  - User model의 속성 중 하나
+  - 모든 User 인스턴스에 대해 항상 True인 읽기 전용 속성(AnonymousUser)에 대해서는 항상 False
+  - 사용자가 인증되었는지 여부를 알 수 있는 방법
+  - 일반적으로 request.user 에서 이 속성을 사용하여, 미들웨어의 'django.contrib.auth.middleware.AuthenticationMiddleware'를 통과했는지 확인
+  - 단, 권한(permisssion)과는 관련이 없으며, 사용자가 활성화 상태(active)이거나 유효한 세션(valid session)을 가지고 있는지도 확인하지 않음
+
+![image-20220411212554142](인증.assets/image-20220411212554142.png)
+
+👉 로그인과 비로그인 상태에서 출력되는 링크를 다르게 설정
+
+![image-20220411212659314](인증.assets/image-20220411212659314.png)
+
+👉 인증된 사용자(로그인 상태)라면 로그인 로직을 수행할 수 없도록 처리
+
+![image-20220411212738278](인증.assets/image-20220411212738278.png)
+
+👉 인증된 사용자(로그인 상태)만 로그아웃 로직을 수행할 수 있도록 처리
+
+![image-20220411212801382](인증.assets/image-20220411212801382.png)
+
+👉 인증된 사용자(로그인 상태)만 게시글 작성 링크를 볼 수 있도록 처리
+
+
+
+- The `login_required` decorator
+  - 사용자가 로그인되어 있지 않으면, `settings.LOGIN_URL`에 설정된 문자열 기반 절대 경로로 redirect함
+    - LOGIN_URL의 기본 값은 'accounts/login/'
+    - 두번째 app 이름을 accounts로 했던 이유 중 하나
+  - 사용자가 로그인되어 있으면 정상적으로 view 함수를 실행
+  - 인증 성공 시 사용자가 redirect 되어야하는 경로는 "next"라는 쿼리 문자열 매개 변수에 저장됨
+    - 예시) /accounts/login/?next=/articles/create
+
+![image-20220411213909496](인증.assets/image-20220411213909496.png)
+
+
+
+> 로그인 사용자에 대한 접근 제한
+
+- "next" query string parameter
+  - 로그인이 정상적으로 진행되면 기존에 요청했던 주소로 redirect하기 위해 마치 주소를 keep 해주는 것
+  - 단 ,별도로 처리해주지 않으면 우리가 view에 설정한 redirect 경로로 이동하게 됨
+
+
+
