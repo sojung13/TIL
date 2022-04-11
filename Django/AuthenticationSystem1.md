@@ -1,6 +1,6 @@
 ## Authentication System 1
 
-![image-20220411122514854](인증.assets/image-20220411122514854.png)
+![image-20220411122514854](AuthenticationSystem1.assets/image-20220411122514854.png)
 
 Django 인증 시스템은 `인증(Authentication)`과 `권한(Authorization)`부여를 함께 제공(처리)하며, 이러한 기능이 어느 정도 결합되어 일반적으로 인증 시스템이라고 함
 
@@ -20,12 +20,12 @@ $ python manage.py startapp accounts
 
 - 이후 INSTALLED_APPS에 `출생신고` 해줘야 한다!
 
-![image-20220411091054824](인증.assets/image-20220411091054824.png)
+![image-20220411091054824](AuthenticationSystem1.assets/image-20220411091054824.png)
 
 - 마찬가지로 project 내부 urls.py에 url 경로를 등록해줘야 한다.
 - accounts 내부에 `urls.py` 파일을 따로 생성해준다.
 
-![image-20220411091153638](인증.assets/image-20220411091153638.png)
+![image-20220411091153638](AuthenticationSystem1.assets/image-20220411091153638.png)
 
 
 
@@ -140,7 +140,7 @@ $ python manage.py startapp accounts
 - user_cache는 인스턴스 생성 시에 None으로 할당되며, 유효성 검사를 통과했을 경우 로그인한 사용자 객체로 할당됨
 - 인스턴스의 유효성을 먼저 확인하고, 인스턴스가 유효할 때만 user를 제공하려는 구조
 
-![image-20220411212232649](인증.assets/image-20220411212232649.png)
+![image-20220411212232649](AuthenticationSystem1.assets/image-20220411212232649.png)
 
 
 
@@ -150,11 +150,11 @@ $ python manage.py startapp accounts
 
 > 로그인 코드
 
-![image-20220411101503611](인증.assets/image-20220411101503611.png)
+![image-20220411101503611](AuthenticationSystem1.assets/image-20220411101503611.png)
 
-![image-20220411101416465](인증.assets/image-20220411101416465.png)
+![image-20220411101416465](AuthenticationSystem1.assets/image-20220411101416465.png)
 
-![image-20220411101542256](인증.assets/image-20220411101542256.png)
+![image-20220411101542256](AuthenticationSystem1.assets/image-20220411101542256.png)
 
 (views.py와 login.html 문서 작성 모양)
 
@@ -162,7 +162,7 @@ $ python manage.py startapp accounts
 
 ✔️ login 함수와 create 함수의 차이점
 
-![image-20220411101927392](인증.assets/image-20220411101927392.png)
+![image-20220411101927392](AuthenticationSystem1.assets/image-20220411101927392.png)
 
 create 함수는 Model로 작성한 ModelForm을 상속받는 반면, login 함수는 Form의 상속을 받는 Form이다. 첫 번째가 request고 두 번째 인자가 데이터인 것이다. Form이냐 ModelForm이냐 그거를 구분하면 된다.
 
@@ -206,9 +206,9 @@ def login(request):
   - 현재 요청에 대한 session data를 DB에서 완전히 삭제하고, 클라이언트의 쿠키에서도 sessionid가 삭제됨
   - 이는 다른 사람이 동일한 웹 브라우저를 사용하여 로그인하고, `이전 사용자의 세션 데이터에 엑세스하는 것을 방지하기 위함`
 
-![image-20220411211856111](인증.assets/image-20220411211856111.png)
+![image-20220411211856111](AuthenticationSystem1.assets/image-20220411211856111.png)
 
-![image-20220411211919481](인증.assets/image-20220411211919481.png)
+![image-20220411211919481](AuthenticationSystem1.assets/image-20220411211919481.png)
 
 - base.html에 작성해주면 된다.
 
@@ -233,19 +233,19 @@ def signup(request):
   - 일반적으로 request.user 에서 이 속성을 사용하여, 미들웨어의 'django.contrib.auth.middleware.AuthenticationMiddleware'를 통과했는지 확인
   - 단, 권한(permisssion)과는 관련이 없으며, 사용자가 활성화 상태(active)이거나 유효한 세션(valid session)을 가지고 있는지도 확인하지 않음
 
-![image-20220411212554142](인증.assets/image-20220411212554142.png)
+![image-20220411212554142](AuthenticationSystem1.assets/image-20220411212554142.png)
 
 👉 로그인과 비로그인 상태에서 출력되는 링크를 다르게 설정
 
-![image-20220411212659314](인증.assets/image-20220411212659314.png)
+![image-20220411212659314](AuthenticationSystem1.assets/image-20220411212659314.png)
 
 👉 인증된 사용자(로그인 상태)라면 로그인 로직을 수행할 수 없도록 처리
 
-![image-20220411212738278](인증.assets/image-20220411212738278.png)
+![image-20220411212738278](AuthenticationSystem1.assets/image-20220411212738278.png)
 
 👉 인증된 사용자(로그인 상태)만 로그아웃 로직을 수행할 수 있도록 처리
 
-![image-20220411212801382](인증.assets/image-20220411212801382.png)
+![image-20220411212801382](AuthenticationSystem1.assets/image-20220411212801382.png)
 
 👉 인증된 사용자(로그인 상태)만 게시글 작성 링크를 볼 수 있도록 처리
 
@@ -259,7 +259,7 @@ def signup(request):
   - 인증 성공 시 사용자가 redirect 되어야하는 경로는 "next"라는 쿼리 문자열 매개 변수에 저장됨
     - 예시) /accounts/login/?next=/articles/create
 
-![image-20220411213909496](인증.assets/image-20220411213909496.png)
+![image-20220411213909496](AuthenticationSystem1.assets/image-20220411213909496.png)
 
 
 
