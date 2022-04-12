@@ -41,7 +41,7 @@
 9. ✔️[Start](Algorithm/Start.md) : 수학적 표현과 재귀에 대해
 10. [완전탐색/그리디](Algorithm/완전탐색.md)
 11. ✔️[분할정복/백트래킹](Algorithm/분할정복,백트래킹.md) : 분할정복/ 백트래킹에 대한 설명과 퀵 정렬/ 병합정렬/ 트리에 대한 간단한 설명도 포함
-12. [MergeSort](Algorithm/병합정렬.md) : 퀵 정렬과 함께 많이 사용하는 병합정렬에 대해
+12. [MergeSort](Algorithm/병합정렬.md) : 퀵 정렬과 함께 많이 사용하는 `병합정렬`에 대해
 3. [그래프](Algorithm/그래프.md) : 프림/ 다익스트라, 크루스칼 등 그래프 차원을 이용한 알고리즘에 대해
 
 ---
@@ -50,9 +50,9 @@
 
 1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
 2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
-3. [Model](Django/Model.md) : 모델에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
-3. [Form](Django/DjangoForms.md) : 장고 form이란
-3. [장고 실습](Django/Prof.CRUD.md) : 장고로 같이 홈페이지 화면부터 게시글 수정/ 삭제까지 간단하게 만들어봅시다
+3. [Model](Django/Model.md) : `모델`에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
+3. [Form](Django/DjangoForms.md) : 장고 `form`이란
+3. [장고 실습](Django/Prof.CRUD.md) : 장고로 같이 홈페이지 화면부터 `게시글 수정/ 삭제`까지 간단하게 만들어봅시다
 3. [쿠키와 로그인](Django/AuthenticationSystem1.md) : 쿠키와 캐쉬, 로그인과 로그아웃 과정
 3. [회원가입](Django/AuthenticationSystem2.md) : 웹사이트 회원가입/ 탈퇴/ 정보수정/ 비밀번호 변경 과정
 
