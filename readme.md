@@ -23,8 +23,8 @@
 
 ### 💛 WEB
 
-1. [HTML](Web/HTML.md) / [HTML 실습](Web/HTML+.md)
-3. [Grid](Web/grid.md)
+1. [HTML](Web/HTML.md) : HTML에 대한 개념 소개 / [HTML 실습](Web/HTML+.md) : HTML 실습 예제
+3. [Grid](Web/grid.md) : Bootstrap을 활용한 Grid 개념 소개
 
 ----
 
@@ -49,10 +49,10 @@
 ### 💙 DJANGO
 
 1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
-2. [WhatIsDjango](Django/WhatIsDjango.md) : 장고에 대한 디테일한 설명
-3. [Model](Django/Model.md) : `모델`에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : 모델을 다룬 예시
-3. [Form](Django/DjangoForms.md) : 장고 `form`이란
-3. [장고 실습](Django/Prof.CRUD.md) : 장고로 같이 홈페이지 화면부터 `게시글 수정/ 삭제`까지 간단하게 만들어봅시다
+2. [WhatIsDjango](Django/WhatIsDjango.md) : `Django` 개념을 포함한 디테일한 설명
+3. [Model](Django/Model.md) : `Model`에 대한 디테일한 설명 / [Model detail](Django/Modeldetail.md) : `Model`을 다룬 예시
+3. [Form](Django/DjangoForms.md) : `Form`에 대한 개념 소개
+3. [장고 실습](Django/Prof.CRUD.md) : 장고로 홈페이지 화면부터 `게시글 수정/ 삭제`까지 간단하게 만들어봅시다!
 3. [Authentication System1](Django/AuthenticationSystem1.md) : 쿠키와 캐쉬, 로그인과 로그아웃 과정
 3. [Authentication System2](Django/AuthenticationSystem2.md) : 웹사이트 회원가입/ 탈퇴/ 정보수정/ 비밀번호 변경 과정
 
@@ -60,8 +60,8 @@
 
 ### 💜 DB
 
-1. [SQL basic](DB/SQL.md)
-2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md)
+1. [SQL basic](DB/SQL.md) : sql 개념
+2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md) : sql 디테일한 개념
 
 
 
