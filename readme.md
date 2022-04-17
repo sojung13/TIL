@@ -62,7 +62,7 @@
 
 1. [SQL basic](DB/SQL.md) : SQL 개념 ✔️
 2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md) : SQL 디테일한 개념
-2. [1대N](DB/1N.md) : 1대N의 개념 ✔️
+2. [1대N](DB/1N.md) : 1대N의 개념
 
 
 
