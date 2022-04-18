@@ -97,6 +97,9 @@
 
    ```sql
    -- sql
+   SELECT *
+   FROM users_user
+   WHERE rowid=102;
    ```
 
 4. 해당 user 레코드 수정
@@ -110,6 +113,9 @@
 
       ```sql
    -- sql
+   UPDATE users_user
+   SET first_name = '철수'
+   WHERE rowid = 102;
       ```
 
 5. 해당 user 레코드 삭제
