@@ -60,7 +60,7 @@
 
 ### 💜 DB
 
-1. [SQL basic](DB/SQL.md) : `SQL` 개념 ✔️
+1. [SQL basic](DB/SQL.md) : `SQL` 개념
 2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md) : `SQL 디테일`한 개념
 2. [1:N](DB/1N.md) : `1 : N`의 개념. 
 2. [M:N](DB/MN.md) : `M : N`의 개념 👉 팔로잉 / 좋아요 / 프로필 페이지 만들기
