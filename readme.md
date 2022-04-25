@@ -77,7 +77,7 @@
 
 #### 🖤 JAVASCRIPT
 
-
+1. [자바스크립트 개념](JavaScript/JavaScript.md)
 
 
 
