@@ -77,7 +77,8 @@
 
 #### 🖤 JAVASCRIPT
 
-1. [자바스크립트 개념](JavaScript/JavaScript.md)
+1. [자바스크립트 개념](JavaScript/JavaScript.md) : `자바스크립트`의 기본 개념에 대해서
+1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 ✔️ 
 
 
 
