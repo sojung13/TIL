@@ -65,23 +65,15 @@
 2. [1:N](DB/1N.md) : `1 : N`의 개념. 
 2. [M:N](DB/MN.md) : `M : N`의 개념 👉 팔로잉 / 좋아요 / 프로필 페이지 만들기
 
-
-
----
-
-#### 🤍 REACT
-
-
-
 -----
 
 #### 🖤 JAVASCRIPT
 
 1. [자바스크립트 개념](JavaScript/JavaScript.md) : `자바스크립트`의 기본 개념에 대해서
 1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 ✔️ 
+1. [자바스크립트 심화](JavaScript/JavaScriptDetail.md) : 자바스크립트의 `심화 개념`에 대해서
+1. [자바스크립트 예제](JavaScript/JavaScript 예제.md) : 자바스크립트 `예제 응용` 
 
-
-
-
+----
 
 ✔️ 아직 깃을 완벽히 포트폴리오로 사용할만큼 가꾼 단계가 아니다. 수정이 필요한 md 파일
