@@ -86,3 +86,7 @@ console.log(`data: ${todo}`)
 - 이 문제를 해결하기 위해 JavaScript는
   - 즉시 처리하지 못하는 이벤트들을 다른 곳
 
+
+
+
+
