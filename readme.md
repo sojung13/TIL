@@ -73,6 +73,7 @@
 1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 ✔️ 
 1. [자바스크립트 심화](JavaScript/JavaScriptDetail.md) : 자바스크립트의 `심화 개념`에 대해서
 1. [자바스크립트 예제](JavaScript/JavaScript예제.md) : 자바스크립트 `예제 응용` 
+1. [AJAX](JavaScript/AJAX.md) : `AXIOS` 를 활용한 자바스크립트
 
 ----
 
