@@ -508,3 +508,48 @@ const me = {
 }
 ```
 
+- 메서드는 객체의 속성이 참조하는 함수
+- 객체.메서드명()으로 호출 가능
+- 메서드 내부에서는 this 키워드가 `객체`를 의미함.
+  - fullName은 메서드가 아니기 때문에 정상출력되지 않음
+  - getFullName은 메서드이기 때문에 해당 객체의 firstName과 lastName을 정상적으로 이어서 반환
+
+
+
+> 객체 관련 ES6 문법 1 - 속성명 축약(shorthand)
+
+- 객체를 정의할 때 key와 할당하는 변수의 이름이 같으면 예시와 같이 축약 가능
+
+![image-20220502001159438](JavaScriptFunction.assets/image-20220502001159438.png)
+
+
+
+> 객체 관련 ES6 문법 2 - 메서드명 축약(shorthand)
+
+- 메서드 선언 시 function 키워드 생략 가능
+
+![image-20220502001232884](JavaScriptFunction.assets/image-20220502001232884.png)
+
+
+
+> 객체 관련 ES6 문법 3 - 계산된 속성(computed property name)
+
+- 객체를 정의할 때 key의 이름을 표현식을 이용하여 동적으로 생성 가능
+
+![image-20220502001339601](JavaScriptFunction.assets/image-20220502001339601.png)
+
+
+
+> 객체 관련 ES6 문법 4- 구조 분해 할당(destructing assignment)
+
+- 배열 또는 객체를 분해하여 속성을 변수에 쉽게 할당할 수 있는 문법
+
+![image-20220502001419970](JavaScriptFunction.assets/image-20220502001419970.png)
+
+
+
+> 객체 관련 ES6 문법 5 - Spread operator
+
+- spread operator(...)를 사용하면 객체 내부에서 객체 전개 가능
+
+![image-20220502001509187](JavaScriptFunction.assets/image-20220502001509187.png)
