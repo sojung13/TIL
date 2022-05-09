@@ -70,7 +70,7 @@
 #### 🖤 JAVASCRIPT
 
 1. [자바스크립트 개념](JavaScript/JavaScript.md) : `자바스크립트`의 기본 개념에 대해서
-1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 ✔️ 
+1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 
 1. [자바스크립트 심화](JavaScript/JavaScriptDetail.md) : 자바스크립트의 `심화 개념`에 대해서
 1. [자바스크립트 예제](JavaScript/JavaScript예제.md) : 자바스크립트 `예제 응용` 
 1. [AJAX](JavaScript/AJAX.md) : `AXIOS` 를 활용한 자바스크립트
@@ -79,8 +79,8 @@
 
 #### 🤍Vue
 
-1. [Vue](Vue/Vue.md)
+1. [Vue](Vue/Vue.md) ✔️
 
-2. [Vue2](Vue/Vue2.md)
+2. [Vue2](Vue/Vue2.md) ✔️
 
 ✔️ 아직 깃을 완벽히 포트폴리오로 사용할만큼 가꾼 단계가 아니다. 수정이 필요한 md 파일
