@@ -81,6 +81,6 @@
 
 1. [Vue](Vue/Vue.md) ✔️
 
-2. [Vue2](Vue/Vue2.md) ✔️
+2. [Vue2](Vue/Vue2.md) : Vue `CLI`, `router` 개념
 
 ✔️ 아직 깃을 완벽히 포트폴리오로 사용할만큼 가꾼 단계가 아니다. 수정이 필요한 md 파일
