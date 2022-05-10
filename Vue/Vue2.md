@@ -61,6 +61,7 @@
 
 - HTML의 body 부분
 - 각 컴포넌트를 작성
+- 주의사항!!! template 내부는 오직 하나의 element만 존재해야 한다.(div든 h1이든..)
 
 ##### 🧡스크립트(JavaScript)
 
