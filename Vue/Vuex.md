@@ -94,3 +94,44 @@
 - getters 자체가 state를 변경하지는 않음
   - state를 특정한 조건에 따라 구분(계산)만 함
   - 즉, 계산된 값을 가져옴
+
+
+
+-----
+
+
+
+### Component Binding Helper
+
+- JS Array Helper Method를 통해 배열 조작을 편하게 하는 것과 유사
+- 논리적인 코드 자체가 변하는 것이 아니라 "쉽게" 사용할 수 있도록 되어 있다.
+- 종류
+  - mapState
+  - mapGetters
+  - mapActions
+  - mapMutations
+  - createNamespacedHelpers
+
+
+
+> mapState
+
+- computed와 Store의 state를 매핑
+- Vuex Store의 하위 구조를 반환하여 component 옵션을 생성함
+- 매핑된 computed 이름이 state 이름과 같을 때 문자열 배열을 전달 할 수 있음
+- 다른 computed 값을 함께 사용할 수 없기 때문에 최종 객체를 computed에 전달할 수 이도록 객체 전개 연산자(Object Spread Operator)로 객체를 복사하여 작성
+
+
+
+> mapGetters
+
+- Computed와 Getter를 매칭
+- getters를 객체 전개 연산자(Object Spread Operator)로 계산하여 추가
+- 해당 컴포넌트 내에서 매핑하고자 하는 이름이 index.js에 정의해 놓은 getters의 이름과 동일하며 배열의 형태로 해당 이름만 문자열로 추가
+
+
+
+> mapActions
+
+- action을 전달하는 컴포넌트 method 옵션을 만듦
+- actions를 객체 전개 연산자(Object Spread Operator)로 계산하여 추가하기
