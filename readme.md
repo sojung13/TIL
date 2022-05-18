@@ -5,6 +5,7 @@
 1. ✔️[Markdown](startcamp/마크다운md)
 2. [CLI](startcamp/CLI.md)
 3. [GIT 사용법](startcamp/Git.md) : git 하는 방법! 그림으로 보려면 👉[GIT 예시 도식화 그림](startcamp/git예시.md)
+3. [GIT branch](startcamp/GITbranch.md) : GIT 으로 함께 협업하는 방법
 
 -----
 
