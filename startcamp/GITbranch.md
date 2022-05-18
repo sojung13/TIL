@@ -72,7 +72,7 @@
 
 
 - 현재 `git remote -v`를 통해 저장된 브랜치를 확인하면 포크해온 주소까지 뜬다.
-- 그래서 `git remote add <다른 이름> <원본 저장소 주소>` 명령어를 통해 origin이 아닌 다른 이름으로 주소를 저장해준다.
+- git clone을 통해 포크해온 주소를 열어주고, `git remote add <다른 이름> <원본 저장소 주소>` 명령어를 통해 origin이 아닌 다른 이름으로 주소를 저장해준다.
 - `git switch -c (feature/login)` 명령어를 통해 브랜치를 바꿔주고 파일을 만들고 push까지 해준다. 여기서 push는 원본으로 하면 안되고 복제한 주소에 push해주는 것이다. 그래서 `git push origin (feature/login)`으로 푸쉬해준다. 복제해왔으니 내 것이기 때문!!
 - 이후 내 git 계정으로 들어가면 `compare& pull request` 버튼이 생기는데, 여기서도 메시지를 작성해서 보내준다.
 - 이제 원본을 가진 계정주가 깃 계정에 들어가면 `pull request` 알림이 생성된다. 확인하면 내가 작성한 메시지와 함께 코드가 뜨는데, 이 이후 과정은 위 1번 과정과 똑같다. merge 컨펌을 하고 master가 반영된 것을 확인한 후, 다시 내 브랜치에서 master 브랜치로 돌아오고(`git switch master`) 
