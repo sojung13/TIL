@@ -294,6 +294,8 @@ function taskC(a) {
 //     });
 //   });
 // });
+// 이 코드는 앞으로 계속 길어질 예정이라 불편한데,
+// 밑의 코드는 중간중간 끊을 수 있고 중간에 다른 코드 작성이 가능해 용이하다.
 
 taskA(5, 1)
   .then((a_res) => {
@@ -308,5 +310,25 @@ taskA(5, 1)
     console.log("c result", c_res);
   });
 
+
+
+// 콘솔창 중간에 다른 코드를 끼운 예시
+
+const bPromiseResult = taskA(5,1).then((a_res)=> {
+    console.log('a result : ', a_res)
+    return taskB(a_res)
+})
+
+console.log('이것처럼 중간에 어떤 코드를 작성하더라도!!!!')
+console.log('크게 무리가 없다는 장점이 있다!!!!')
+
+bPromiseResult
+	.then((b_res)=> {
+    console.log('b result : ',b_res)
+    return taskC(b_res)
+	})
+	.then((c_res)=> {
+    console.log('c result : ', c_res)
+})
 ```
 

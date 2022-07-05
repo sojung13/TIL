@@ -13,7 +13,7 @@ console.log(area2)					// 300
 
 // 위와 같이 중복된 코드를 계속 작성하는 것이 번거로우니 할 수 있는 것이 바로 함수작성이다!!!
 
-function getArea = (width, height) => {
+const getArea = (width, height) => {
     let area = width * height
     console.log(area)
 }	// 함수 선언식, 함수 선언 방식의 함수 생성
@@ -188,6 +188,7 @@ person['say2']()						// 안녕 박소정
 ```js
 // in 연산자
 // 프로퍼티의 존재 여부를 boolean 형태로 전달받을 수 있다.
+// 객체에서 무조건 key 값을 찾을 때만 사용된다!!!! value값 찾기 불가능
 
 const person = {
     name : '박소정',

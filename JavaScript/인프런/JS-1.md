@@ -30,6 +30,7 @@ const age = 25;
 
 // 변수는 age를 30으로 바꿔도 문제가 안되지만,
 // 상수는 read-only이기 때문에 선언 이후에 값을 절대로 바꿀수가 없다!!
+// const로 프로퍼티를 만든 경우 안의 요소를 바꾸는건 되지만 주소값 전체를 바꾸면 안된다!!1
 ```
 
 
@@ -51,7 +52,7 @@ let age = 25;
 let tall = 180;
 let inf = Infinity;			// 무한대
 let minusInf = -Infinity;   // - 무한대
-let nan = Nan;  			// 수학적인 연산의 실패값
+let nan = NaN;  			// 수학적인 연산의 실패값. 숫자가 아닌 값
 ```
 
 ```js
@@ -75,6 +76,8 @@ let isSwitchon = true;
 // null, undefined
 
 let a;    			// undefined
+// 자바스크립트에서 undefined까지는 오류 페이지를 띄워주지 않는다.
+
 let b = null		// null
 ```
 
