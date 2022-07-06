@@ -88,5 +88,5 @@ main();
 
 > await과 async
 
-- `await` : 
-- `async` : 
+- `await` : Promise 객체를 입히는 것
+- `async` : Promise 객체를 해독/ 해제하는 것

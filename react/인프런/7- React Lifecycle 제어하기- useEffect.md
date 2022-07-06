@@ -31,6 +31,10 @@ useEffect(()=> {
 useEffect(()=> {
     console.log('effect')
     console.log(name)
+    
+    // 클린업 함수 반환(return 뒤에 나오는 함수이며 useEffect에 대한 뒷정리 함수)
+    // 언마운트 될 때만 cleanup 함수를 실행하고 싶을 때 두 번째 파라미터로 빈 배열을 넣는다.
+    // 특정값이 업데이트되기 직전에 cleanup 함수를 실행하고 싶을 때 deps 배열안에 검사하고 싶은 값을 넣어준다.
     return () => {
         console.log('cleanup')
         console.log(name)
