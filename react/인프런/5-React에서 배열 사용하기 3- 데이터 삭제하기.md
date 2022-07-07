@@ -128,7 +128,7 @@ const DiaryItem = ({author, content, created_date, emotion, id, onRemove}) => {
       <button onClick={handleRemove}>삭제하기</button>
      </div>
   )
-}
+} 
 
 export default DiaryItem;
 ```
