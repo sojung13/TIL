@@ -1,15 +1,15 @@
 <h1>🌱TIL (Today I Learned)</h1>
 
-### ❤ GIT 사용법
+### GIT 사용법
 
-1. ✔️[Markdown](startcamp/마크다운md)
+1. ✔️[Markdown](startcamp/마크다운.md)
 2. [CLI](startcamp/CLI.md)
 3. [GIT 사용법](startcamp/Git.md) : git 하는 방법! 그림으로 보려면 👉[GIT 예시 도식화 그림](startcamp/git예시.md)
 3. [GIT branch](startcamp/GITbranch.md) : GIT 으로 함께 협업하는 방법
 
 -----
 
-### 🧡 PYTHON
+### PYTHON
 
 1. ✔️[변수(Variable)](Python/변수(Variable).md)
 
@@ -22,14 +22,14 @@
 
 -----
 
-### 💛 WEB
+### WEB
 
 1. [HTML](Web/HTML.md) : HTML에 대한 개념 소개 / [HTML 실습](Web/HTML+.md) : HTML 실습 예제
 3. [Grid](Web/grid.md) : Bootstrap을 활용한 Grid 개념 소개
 
 ----
 
-### 💚 ALGORITHM
+### ALGORITHM
 
 1. [Bubble/Counting Sort](Algorithm/Bubble,Counting_sort.md)
 2. [List배열](Algorithm/List.md)
@@ -47,7 +47,7 @@
 
 ---
 
-### 💙 DJANGO
+### DJANGO
 
 1. [Django 실행](Django/Django.md) / [Django detail](Django/Djangodetail.md) : 대략적인 장고 설치/ 실행법
 2. [WhatIsDjango](Django/WhatIsDjango.md) : `Django` 개념을 포함한 디테일한 설명
@@ -59,7 +59,7 @@
 
 ----
 
-### 💜 DB
+### DB
 
 1. [SQL basic](DB/SQL.md) : `SQL` 개념
 2. [SQL detail 1](DB/SQL__5.md) / [SQL detail 2](DB/SQL__6.md) : `SQL 디테일`한 개념
@@ -68,7 +68,7 @@
 
 -----
 
-#### 🖤 JAVASCRIPT
+#### JAVASCRIPT
 
 1. [자바스크립트 개념](JavaScript/JavaScript.md) : `자바스크립트`의 기본 개념에 대해서
 1. [자바스크립트 문법](JavaScript/JavaScriptFunction.md) : 자바스크립트의 `기본 문법`에 대해서 
@@ -78,17 +78,18 @@
 
 -----
 
-#### 🤍Vue
+#### Vue
 
 1. [Vue](Vue/Vue.md) ✔️
 2. [Vue2](Vue/Vue2.md) : Vue `CLI`, `router` 개념
 2. [Vuex](Vue/Vuex.md) : `Vuex`의 개념
 
--------
+----
 
-#### 🤎REACT
+### CS 지식
 
-1. [react](react/REACT1.md) : 기초
-1. 미니프로젝트 : 일기장  프로젝트  
+1. 네트워크
 
-✔️ 아직 깃을 완벽히 포트폴리오로 사용할만큼 가꾼 단계가 아니다. 수정이 필요한 md 파일
+
+
+
