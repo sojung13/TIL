@@ -66,14 +66,14 @@
     - `Collision Detection`
       - 충돌 (Collision) : 두 개의 장비들이 데이터를 동시에 보내려다 부딪치는 경우
 
-- Token Ring
-
-  - Token : LAN 망에서 사용되는 것으로 특별한 제어 프레임을 뜻함
-
 - Token Bus
 
-  - s → a → b → c → d → s
-  - s → a → b → s → c → d
+  - Token : LAN 망에서 사용되는 것으로 특별한 제어 프레임을 뜻함
+    - s → a → b → c → d → s
+    - s → a → b → s → c → d
+
+- Token Ring
+
 
 ![image-20230223182516160](C:\Users\X-note\Desktop\새 폴더\TIL\CS\네트워크\3 네트워크 기술\assets/image-20230223182516160.png)
 
