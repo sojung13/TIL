@@ -9,6 +9,7 @@
   - LAN(Local Area Network)
   - MAN(Metropolitan Area Network)
   - WAN(Wide Area Network)
+  - => 정보통신망이 발달하여 경계가 모호
 
 
 
@@ -55,7 +56,7 @@
 
   ![image-20230223182429136](C:\Users\X-note\Desktop\새 폴더\TIL\CS\네트워크\3 네트워크 기술\assets/image-20230223182429136.png)
 
-  - Xerox - Palo Alto 연구소
+  - Xerox - Palo Alto 연구소에서 만듦(ex. PC 개념, 객체지향 개념 만듦)
   - 컴퓨터 네트워크 기술의 하나로, 일반적으로 LAN, MAN 및 WAN에서 가장 많이 활용되는 기술 규격
   - CSMA/CD (Carrier Censed Multiple Access Collision Detection) 방식
     - `캐리어 센스 (Carrier Sensed) `
@@ -65,12 +66,15 @@
       - 두 개 이상의 PC나 서버가 동시에 네트워크 상에 데이터를 실어 보내는 경우 
     - `Collision Detection`
       - 충돌 (Collision) : 두 개의 장비들이 데이터를 동시에 보내려다 부딪치는 경우
+    - => 망 상황을 살 핀 후(Carrier Sensed) 데이터를 실어서 보내고, 동시에 데이터를 보내 충돌이 일어나면(Multiple Access) 충돌이 일어나니 취소, 포기하는 행위(Collision Detection)
 
 - Token Bus
 
   - Token : LAN 망에서 사용되는 것으로 특별한 제어 프레임을 뜻함
-    - s → a → b → c → d → s
+    - s → a → b → c → d → s 
+      - 토큰이 있는 s만 데이터 실음. 더이상 보낼 게 없으면 차례로 a,b,c,d에게 토큰을 줌
     - s → a → b → s → c → d
+      - 우선순위 조정
 
 - Token Ring
 
@@ -84,7 +88,7 @@
 #### MAN
 
 - 도시 규모
-- DQDB(Distributed Queue Dual Bus)
+- DQDB(Distributed Queue Dual Bus) : 두 가닥 버스 형태
 
 ![image-20230223182551170](C:\Users\X-note\Desktop\새 폴더\TIL\CS\네트워크\3 네트워크 기술\assets/image-20230223182551170.png)
 

@@ -2,6 +2,8 @@
 
 #### LLC 계층과 MAC 계층
 
+- OSI 7 계층의 2단계 계층의 부계층
+
 - ![image-20230225170515939](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225170515939.png)
 
 - LAN 환경에서 데이터링크 계층을 LLC 계층과 MAC 계층으로 나누어 처리
