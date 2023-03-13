@@ -10,11 +10,11 @@
 
   - 요청은 단일 라인으로 구성하고, 가능한 메서드는 `GET`이 유일
 
-    ![image-20230306184459012](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306184459012.png)
+    ![image-20230306184459012](./assets/image-20230306184459012.png)
 
   - 응답 또한 극도로 `단순(파일 내용 자체)`
 
-    ![image-20230306184511830](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306184511830.png)
+    ![image-20230306184511830](./assets/image-20230306184511830.png)
 
 - **HTTP/1.0 - 확장성 만들기**
   
@@ -50,7 +50,7 @@
 
       - SSL/TLS 위에 위치하여 더 기능이 강화되었음
 
-      ![image-20230306184800379](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306184800379.png)
+      ![image-20230306184800379](./assets/image-20230306184800379.png)
 
   - 복잡한 어플리케이션을 위한 HTTP 사용
 
@@ -87,7 +87,7 @@
   - 응답성 증가 능력을 입증
   - 전송된 데이터 중복에 관한 문제를 해결
 
-![image-20230306185453217](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306185453217.png)
+![image-20230306185453217](./assets/image-20230306185453217.png)
 
 
 
@@ -108,7 +108,7 @@
 
 - SSL Record PRotocol
 
-  ![image-20230306184925257](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306184925257.png)
+  ![image-20230306184925257](./assets/image-20230306184925257.png)
 
 
 
@@ -136,7 +136,7 @@
 
     - 모든 HTTP/2 통신은 더 작은 메시지와 프레임으로 분할되며, 각각은 바이너리 형식으로 인코딩
 
-      ![image-20230306185800433](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306185800433.png)
+      ![image-20230306185800433](./assets/image-20230306185800433.png)
 
 - 스트림, 메시지 및 프레임
   - **스트림**
@@ -151,7 +151,7 @@
     - 각 스트림에는 양방향 메시지 전달에 사용되는 고유 식별자와 우선순위 정보(선택 사항)가 있음
     - 프레임은 통신의 최소 단위이며 특정 유형의 데이터(ex. HTTP 헤더, 메시지 페이로드 등)를 전달
 
-![image-20230306185955435](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306185955435.png)
+![image-20230306185955435](./assets/image-20230306185955435.png)
 
 
 
@@ -167,7 +167,7 @@
 
     - 이러한 제한을 없애고 `전체 요청 및 응답 다중화 지원`
 
-      ![image-20230306190105889](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306190105889.png)
+      ![image-20230306190105889](./assets/image-20230306190105889.png)
 
   - HTTP 메시지를 독립된 프레임으로 세분화하고 이 프레임을 인터리빙한 다음, 다른 쪽에서 다시 조립
 
@@ -191,7 +191,7 @@
     - 클라이언트가 선호하는 응답 수신 방식을 나타낼 수 있음
     - 서버가 이 정보를 사용하여 CPU, 메모리 및 기타 리소스의 할당을 제어함으로써 스트림 처리의 우선순위를 지정
     - 응답 데이터가 있는 경우, 서버는 우선순위가 높은 응답이 클라이언트에 최적으로 전달되도록 대역폭을 할당
-  - ![image-20230307013801995](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307013801995.png)
+  - ![image-20230307013801995](./assets/image-20230307013801995.png)
   - 스트림 종속성은 또 다른 스트림의 고유 식별자를 상위 요소로 참조하는 방식으로 선언
     - 가능하면 상위 요소 스트림에 종속성보다 리소스가 먼저 할당되어야 함을 나타냄(C보다는 D가 먼저)
     - 동일한 상위 요소를 공유하는 스트림(즉, 동위 요소 스트림)은 그 가중치에 비례하여 리소스가 할당
@@ -223,7 +223,7 @@
 
     - 원래 요청에 응답할 뿐만 아니라 클라이언트가 명시적으로 요청하지 않아도 서버가 추가적인 리소스를 클라이언트에 푸시할 수 있음
 
-      ![image-20230307014222901](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307014222901.png)
+      ![image-20230307014222901](./assets/image-20230307014222901.png)
 
   - 모든 서버 푸시 스트림은 PUSH_PROMISE 프레임을 통해 시작
 
@@ -243,9 +243,9 @@
         - 이 목록을 참조로 사용하여 이전에 전송된 값을 효율적으로 인코딩
   - Huffman 코딩을 사용하면 전송 시에 개별 값을 압축할 수 있으며, 이전에 전송된 값의 인덱스 목록을 사용하면 중복 값을 인코딩
 
-![image-20230307014550798](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307014550798.png)
+![image-20230307014550798](./assets/image-20230307014550798.png)
 
-![image-20230307014606283](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307014606283.png)
+![image-20230307014606283](./assets/image-20230307014606283.png)
 
 
 
@@ -256,7 +256,7 @@
   - QPACK:Header Compression for HTTP/3
   - HTTP/3 and QPACK event definitions for qlog
 
-![image-20230307014642413](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307014642413.png)
+![image-20230307014642413](./assets/image-20230307014642413.png)
 
 
 
@@ -332,7 +332,8 @@
   - 자바 스크립트가 브라우저 이외의 환경에서도 동작할 수 있도록 함  서버 사이드 애플리케이션 개발에 주로 사용 (파일, HTTP 등 Built-in API 제공)
   - Front-end와 Back-end에서 동일한 언어로 개발이 가능해짐
 - 비동기 I/O 지원, 단일 스레드 이벤트 루프 방식
-    - 실시간 처리를 위한 요청-응답이 많은 SPA(Single Page Application)에 적합
+    
+  - 실시간 처리를 위한 요청-응답이 많은 SPA(Single Page Application)에 적합
   
 - SPA(Single Page Application) 프레임워크
   
@@ -360,7 +361,7 @@
 
 #### 2020년과 이후 JavaScript
 
-![image-20230307015250408](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307015250408.png)
+![image-20230307015250408](./assets/image-20230307015250408.png)
 
 - 2020년, 새로운 전환점의 시작
 
@@ -382,7 +383,7 @@
 
     - JavaScript의 슈퍼셋으로, 새로운 ECMAScript 명세들의 도입은 공식 릴리스 이전에 이루어짐
 
-      ![image-20230307015353699](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230307015353699.png)
+      ![image-20230307015353699](./assets/image-20230307015353699.png)
 
     - 프런트엔드 주요 프레임워크인 Vue.js는 Vue.js 3.0에서 TS로의 전환을 일찍이 발표했고, Angular는 이미 오래 전부터 2.0을 통해 TS를 기본적으로 사용
     

@@ -20,13 +20,13 @@
   - 요청과 응답 이후, (자동으로) 연결이 끊어지므로 비상태 프로토콜
     - 연락이 끊긴 후 자동으로 이전 것을 기억하지 않는다!
 
-![image-20230306165500803](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306165500803.png)
+![image-20230306165500803](./assets/image-20230306165500803.png)
 
 
 
 #### MIME 유사 메시지
 
-![image-20230306165622667](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306165622667.png)
+![image-20230306165622667](./assets/image-20230306165622667.png)
 
 - Multipurpost Internet Message Extentsions
 - ✅ ASCII가 아닌 문자 인코딩을 이용해 영어가 아닌 다른 언어로 된 전자 우편을 보낼 수 있는 방식 + `그림, 음악, 영화, 컴퓨터 프로그램`과 같은 8비트짜리 이진 파일 역시 전송 가능
@@ -45,7 +45,7 @@
   - 하늘색 : 기존의 데이터 타입
   - 흰색: MIME에서 추가적으로 전송 가능한 데이터 타입
 
-  ![image-20230306165635723](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306165635723.png)
+  ![image-20230306165635723](./assets/image-20230306165635723.png)
 
 - Content-Transfer-Encoding
 
@@ -53,7 +53,7 @@
 
   - Content-Transfer-encoding : < type >
 
-    ![image-20230306165708716](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306165708716.png)
+    ![image-20230306165708716](./assets/image-20230306165708716.png)
 
   - Base64
 
@@ -63,7 +63,7 @@
     - 각 6비트 단락은 하나의 문자로 해석하여 ASCII 변환
     - 24비트가 네 개의 문자가 되어 최종적으로 32비트가 전송 25%의 오버헤드
 
-![image-20230306165830926](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306165830926.png)
+![image-20230306165830926](./assets/image-20230306165830926.png)
 
 - 차이점
   - HTTP에서 사용하는 MIME 유사메시지는 content-Length 필드 존재
@@ -76,7 +76,7 @@
 
 - 요청 메시지(Request Message) 구성
 
-  ![image-20230306172219659](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306172219659.png)
+  ![image-20230306172219659](./assets/image-20230306172219659.png)
 
   - 요청문(Request Line)
   - 헤더
@@ -86,7 +86,7 @@
 
 - 요청 메소드의 명령
 
-![image-20230306172237866](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306172237866.png)
+![image-20230306172237866](./assets/image-20230306172237866.png)
 
 
 
@@ -96,7 +96,7 @@
 
   - 요청메시지와 유사하나, 요청문 대신 `상태문(Status line)` 사용
 
-    ![image-20230306172832453](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306172832453.png)
+    ![image-20230306172832453](./assets/image-20230306172832453.png)
 
 - 상태문의 구성
   - HTTP 버전
@@ -104,7 +104,7 @@
   - 상태 이름
 - 주요 상태 코드와 이름
 
-![image-20230306172903683](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306172903683.png)
+![image-20230306172903683](./assets/image-20230306172903683.png)
 
 
 
@@ -112,7 +112,7 @@
 
 - 요청 메시지
 
-  ![image-20230306172943762](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306172943762.png)
+  ![image-20230306172943762](./assets/image-20230306172943762.png)
 
   - 요청 메서드 : GET
   - URL : /index.php
@@ -121,7 +121,7 @@
 
 - 응답 메시지
 
-![image-20230306173000720](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306173000720.png)
+![image-20230306173000720](./assets/image-20230306173000720.png)
 
 - 시뮬레이션
 
@@ -133,14 +133,14 @@
 
     - telnet 프로그램이 대행
 
-      ![image-20230306173040824](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306173040824.png)
+      ![image-20230306173040824](./assets/image-20230306173040824.png)
 
       1. telnet 명령으로 연결을 시도
       2. 텔넷 프로그램의 메시지 3줄이 출력, 80번 포트에서 HTTP 서버와 연결
       3. 사용자가 GET/index.php, HTTP/1.1, Host:uu.ac.kr 두 줄과 공백 한 줄을 입력
       4. 요청 메시지를 수신한 HTTP 서버는 HTTP/1.1 200 OK를 시작으로 ,응답 메시지를 회신하고 HTTP 동작을 완료
 
-      ![image-20230306173215729](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306173215729.png)
+      ![image-20230306173215729](./assets/image-20230306173215729.png)
 
 
 
@@ -152,7 +152,7 @@
 
 #### CGI 구조
 
-![image-20230306173241131](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306173241131.png)
+![image-20230306173241131](./assets/image-20230306173241131.png)
 
 - 웹 서버단 뒤 쪽에 CGI 프로그램이 위치해있다.
 
@@ -176,11 +176,11 @@
 
 - 사용자의 입력을 서버에 전달
 
-![image-20230306173413278](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306173413278.png)
+![image-20230306173413278](./assets/image-20230306173413278.png)
 
 - FORM 태그 사용 예
 
-  ![image-20230306183915982](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306183915982.png)
+  ![image-20230306183915982](./assets/image-20230306183915982.png)
 
 웹브라우저에서는 JavaScript 언어로 입력해서 받을 수 있도록 하고, 승인 버튼을 눌러서 전달될 때는 CGI가 처리해준다.
 
@@ -201,4 +201,4 @@
 - SSL 위에 HTTP를 얹어서 보안이 보장된 통신을 하는 프로토콜 => **SSL 암호화 통신**
   - SSL 암호화 통신은 **공개키 암호화 방식** 알고리즘을 통해 구현됨
 
-![image-20230306202746839](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230306202746839.png)
+![image-20230306202746839](./assets/image-20230306202746839.png)
