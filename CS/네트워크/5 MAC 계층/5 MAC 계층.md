@@ -4,7 +4,7 @@
 
 - OSI 7 계층의 2단계 계층의 부계층
 
-- ![image-20230225170515939](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225170515939.png)
+- ![image-20230225170515939](./assets/image-20230225170515939.png)
 
 - LAN 환경에서 데이터링크 계층을 LLC 계층과 MAC 계층으로 나누어 처리
 - LLC(Logical Link Control)
@@ -44,11 +44,11 @@
       - 토큰을 가지고 있는 경우에만 송신
 
 - 토큰 버스
-  - ![image-20230225170917535](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225170917535.png)
+  - ![image-20230225170917535](./assets/image-20230225170917535.png)
   - 물리적으로는 버스 구조이나 논리적으로는 링 구조
   - 토큰(token)이라고 부르는 제어 프레임 사용
 - 토큰 링
-  - ![image-20230225170926993](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225170926993.png)
+  - ![image-20230225170926993](./assets/image-20230225170926993.png)
   - 순환 구조의 전송매체
   - 대기 모드와 전송 모드로 동작
 
@@ -117,7 +117,7 @@
   - 트랜시버(Transceiver)
   - 리피터(Repeater)
 - 허브와 스위치
-  - ![image-20230225171559678](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225171559678.png)
+  - ![image-20230225171559678](./assets/image-20230225171559678.png)
   - 허브(hub, dummy hub)
     - 각 호스트는 외형상 스타형 구조로 허브에 연결
     - 내부적인 동작 원리는 공유 버스 방식을 사용
@@ -184,7 +184,7 @@
   - SD, AC, ED의 세 필드로 구성
 - 데이터 프레임
 
-![image-20230225172236453](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225172236453.png)
+![image-20230225172236453](./assets/image-20230225172236453.png)
 
 - 필드의 의미
   - Start Delimiter/End Delimiter
@@ -194,7 +194,7 @@
     - M 비트 : 모니터 호스트가 사용
       - 모니터 호스트를 지날 때 M=1로 지정
       - M=1인 상태로 모니터 호스트를 지나가면 송신 호스트의 회수 기능 오류로 간주
-      - ![image-20230225172353811](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225172353811.png)
+      - ![image-20230225172353811](./assets/image-20230225172353811.png)
   - Frame Control
     - 제어용 MAC 프레임 : TT = 00
     - LLC 프레임 : TT = 01
@@ -208,7 +208,7 @@
 
 #### 토큰 링의 프레임 캡슐화
 
-![image-20230225172739291](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230225172739291.png)
+![image-20230225172739291](./assets/image-20230225172739291.png)
 
 
 

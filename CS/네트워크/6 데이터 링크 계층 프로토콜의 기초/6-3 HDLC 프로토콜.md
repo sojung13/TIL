@@ -24,7 +24,7 @@
 
 #### 프레임 구조
 
-![image-20230227173641524](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227173641524.png)
+![image-20230227173641524](./assets/image-20230227173641524.png)
 
 - 주요 필드
   - 비트 프레임
@@ -59,7 +59,7 @@
 
 #### 정보 프레임
 
-![image-20230227180033321](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227180033321.png)
+![image-20230227180033321](./assets/image-20230227180033321.png)
 
 - Seq
   - 송신용 순서번호
@@ -75,7 +75,7 @@
 
 #### 감독 프레임
 
-![image-20230227180442652](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227180442652.png)
+![image-20230227180442652](./assets/image-20230227180442652.png)
 
 - 프레임에 대한 응답 기능
   - Type
@@ -93,7 +93,7 @@
 
 #### 비번호 프레임
 
-![image-20230227174312484](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174312484.png)
+![image-20230227174312484](./assets/image-20230227174312484.png)
 
 - 순서 번호가 없는 프레임을 의미
 - 프레임 종류(Type + Modifier 총 5비트로 구분)
@@ -122,20 +122,20 @@
 
 - 응답
 
-![image-20230227174504244](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174504244.png)
+![image-20230227174504244](./assets/image-20230227174504244.png)
 
 - REJ 사용
   - Go-back N 방식으로 다시 전송하는 중
 
-![image-20230227174516626](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174516626.png)
+![image-20230227174516626](./assets/image-20230227174516626.png)
 
 - Poll / Final 비트 사용
 
-![image-20230227174533927](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174533927.png)
+![image-20230227174533927](./assets/image-20230227174533927.png)
 
 - FRMR 사용
 
-![image-20230227174549992](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174549992.png)
+![image-20230227174549992](./assets/image-20230227174549992.png)
 
 
 
@@ -146,7 +146,7 @@
   - 주국에서 SARM 명령 전송
   - 종국에서 SARM 응답 전송
 
-![image-20230227174626280](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174626280.png)
+![image-20230227174626280](./assets/image-20230227174626280.png)
 
 
 
@@ -155,4 +155,4 @@
 - 양쪽 호스트가 혼합국으로 동작
   - 임의의 호스트에서 SABM 전송하여 연결 설정
 
-![image-20230227174705366](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230227174705366.png)
+![image-20230227174705366](./assets/image-20230227174705366.png)

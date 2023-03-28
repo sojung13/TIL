@@ -16,7 +16,7 @@
     - 클래스 C : 2^8개의 호스트 수용
     - 클래스 D : 멀티캐스팅 지원
 
-![image-20230308155147900](C:\Users\X-note\AppData\Roaming\Typora\typora-user-images\image-20230308155147900.png)
+![image-20230308155147900](./assets/image-20230308155147900.png)
 
 
 
@@ -45,7 +45,7 @@
 
     - 파일의 내용은 (도메인 이름, IP 주소)의 쌍으로 구성
 
-      ![image-20230308162830680](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162830680.png)
+      ![image-20230308162830680](./assets/image-20230308162830680.png)
 
   - 주기적으로 ftp 서비스를 이용하여 수정된 파일 다운로드
 
@@ -108,7 +108,7 @@
 
 - 도메인
 
-  ![image-20230308160319235](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308160319235.png)
+  ![image-20230308160319235](./assets/image-20230308160319235.png)
 
   - 계층적 구조
   - 같은 레벨에서는 레이블이 유일해야 함
@@ -138,7 +138,7 @@
   - 하위 레이블부터 시작
   - 레이블 이름을 점(.)으로 연결
 
-![image-20230308160450021](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308160450021.png)
+![image-20230308160450021](./assets/image-20230308160450021.png)
 
 - 데이터베이스 서비스
 
@@ -146,7 +146,7 @@
 
   - 하나의 개념적인 저장장소를 갖지만, 실제로는 각 하부 도메인을 관리하는 호스트에 이름, 주소 관리 권한 위임
 
-    ![image-20230308160524836](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308160524836.png)
+    ![image-20230308160524836](./assets/image-20230308160524836.png)
 
   - 권한을 위임 받은 도메인 관리 서버는 자신의 도메인에 포함된 모든 레이블(호스트 또는 하부 도메인)에 관한 정보를 적절하게 유지해야 함
 
@@ -158,7 +158,7 @@
 
     - 도메인과 유사하지만 다름
 
-      ![image-20230308160625217](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308160625217.png)
+      ![image-20230308160625217](./assets/image-20230308160625217.png)
 
 
 
@@ -171,7 +171,7 @@
 - 질의 레코드
   - DNS 클라이언트가 DNS 서버에 정보를 요청하는 용도
 
-![image-20230308160718834](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308160718834.png)
+![image-20230308160718834](./assets/image-20230308160718834.png)
 
 - 각 필드의 의미
   - Name : 찾고자 하는 가변 길이의 도메인 이름
@@ -227,7 +227,7 @@
     - info.mit.edu를 관리하는 네임 서버의 IP 주소를 알면 간단히 처리
     - info.mit.edu의 네임 서버가 서브 존 도메인 내부에 위치하여 IP 주소를 얻기 곤란한 경우 글루 데이터가 필요
 
-![image-20230308161407659](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308161407659.png)
+![image-20230308161407659](./assets/image-20230308161407659.png)
 
 
 
@@ -248,7 +248,7 @@
   - 요청을 받은 네임 서버가 다른 네임 서버의 포인터 정보를 회신
   - 이를 받은 해석기는 다른 네임서버에게 다시 질의
 
-![image-20230308161603059](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308161603059.png)
+![image-20230308161603059](./assets/image-20230308161603059.png)
 
 
 
@@ -270,7 +270,7 @@
   - Answer, Authority, Additional
     - 자원 레코드 사용
 
-![image-20230308161705435](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308161705435.png)
+![image-20230308161705435](./assets/image-20230308161705435.png)
 
 - DNS 헤더
   - Identification
@@ -295,7 +295,7 @@
   - QCOUNT, ANCOUNT, AUCOUNT, ARCOUNT
     - 각 자원 레코드 갯수
 
-![image-20230308161923708](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308161923708.png)
+![image-20230308161923708](./assets/image-20230308161923708.png)
 
 
 
@@ -321,9 +321,9 @@
 
     - 플래그 값은 0x0100이므로 QR=0은 질의 메시지, OPcode=0은 표준 질의, RD=1은 재귀적 응답임
 
-      ![image-20230308162150218](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162150218.png)
+      ![image-20230308162150218](./assets/image-20230308162150218.png)
 
-![image-20230308162156680](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162156680.png)
+![image-20230308162156680](./assets/image-20230308162156680.png)
 
 
 
@@ -331,17 +331,17 @@
 
   - DNS 헤더
 
-    ![image-20230308162222426](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162222426.png)
+    ![image-20230308162222426](./assets/image-20230308162222426.png)
 
   - QUESTION : 질의와 동일
 
   - ANSWER : 2개
 
-    ![image-20230308162246496](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162246496.png)
+    ![image-20230308162246496](./assets/image-20230308162246496.png)
 
   - Authority 자원 레코드 내용
 
-    ![image-20230308162307571](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230308162307571.png)
+    ![image-20230308162307571](./assets/image-20230308162307571.png)
 
 
 
