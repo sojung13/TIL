@@ -1,10 +1,10 @@
-![image-20230315213358177](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315213358177.png)                                                                                                                                                                                                                    
+![image-20230315213358177](./assets/image-20230315213358177.png)                                                                                                                                                                                                                    
 
 
 
 #### CPU-burst Time의 분포
 
-![image-20230315213540264](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315213540264.png)
+![image-20230315213540264](./assets/image-20230315213540264.png)
 
 - 여러 종류의 job(process)이 섞여 있기 때문에 CPU 스케줄링이 필요하다
   - interactive job에게 적절한 response 제공 요망
@@ -61,7 +61,7 @@
 
 #### FCFS(First-Come First-Served)
 
-![image-20230315215829300](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315215829300.png)
+![image-20230315215829300](./assets/image-20230315215829300.png)
 
 - ✅ 먼저 요청한 프로세스를 먼저 처리하는 방식
 - 장점
@@ -89,11 +89,11 @@
   - 주어진 프로세서들에 대해 minimum average waiting time 보장
 - 너무 효율성만 생각하다 보니 Starvation(기아 현상)이 발생할 수 있음
 
-![image-20230315222017435](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315222017435.png)
+![image-20230315222017435](./assets/image-20230315222017435.png)
 
 - Non-Preemptive SJF
 
-![image-20230315222105221](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315222105221.png)
+![image-20230315222105221](./assets/image-20230315222105221.png)
 
 - Preemptive SJF
 
@@ -107,9 +107,9 @@
 
 - 과거의 CPU burst time을 이용해서 추정(exponential averaging)
 
-  ![image-20230315223449832](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315223449832.png)
+  ![image-20230315223449832](./assets/image-20230315223449832.png)
 
-![image-20230315224620732](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230315224620732.png)
+![image-20230315224620732](./assets/image-20230315224620732.png)
 
 
 
@@ -136,4 +136,4 @@
   - q large => FCFS
   - q small => context switch 오버헤드가 커진다
 
-![image-20230316130150658](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230316130150658.png)
+![image-20230316130150658](./assets/image-20230316130150658.png)
