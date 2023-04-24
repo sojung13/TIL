@@ -186,3 +186,4 @@ export const useCounterStore = defineStore("counter", {
 
 
 ❗그렇다고 무조건 Pinia가 좋은 것은 아니다!!!! 이미 Vuex로 개발한 앱이 잘 사용되고 있다면, 굳이 Pinia로 마이그레이션하는데 더 큰 비용이 들기 때문에 계속 Vuex로 유지보수하는 것을 추천 BUT 프로젝트가 개발 초기라면 Pinia를 추천한다.
+
