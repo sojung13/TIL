@@ -14,7 +14,7 @@
     - 각 큐에 CPU time을 적절한 비율로 할당
     - Eg. 80% to foreground in RR, 20% to background in FCFS
 
-![image-20230316130515187](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230316130515187.png)
+![image-20230316130515187](./assets/image-20230316130515187.png)
 
 
 
@@ -29,11 +29,11 @@
   - Process를 하위 큐로 내쫓는 기준
   - 프로세스가 CPU 서비스를 받으려 할 때 들어갈 큐를 결정하는 기준
 
-![image-20230316130711055](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230316130711055.png)
+![image-20230316130711055](./assets/image-20230316130711055.png)
 
 - 예시
 
-  ![image-20230316130747171](../../../../../../AppData/Roaming/Typora/typora-user-images/image-20230316130747171.png)
+  ![image-20230316130747171](./assets/image-20230316130747171.png)
 
 
 
